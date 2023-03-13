@@ -12,38 +12,38 @@ Basic Usage Method Demonstration:
 Firstly, we take the domain name as an example, and perform a fuzzy matching search for host="test.baidu.com" search results.
 
 `host="test.baidu.com"`
-![a6aceee851ff163533373d43ffbedbd1.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p38)
+[![ppQWYb4.jpg](https://s1.ax1x.com/2023/03/13/ppQWYb4.jpg)](https://imgse.com/i/ppQWYb4)
 
 If we need assets with the main domain baidu.com but with subdomains containing the keyword "test", where the "test" keyword suffix may have other character, FOFA query would be:
 
 `host*="test*.baidu.com"`
-![5c18363af7414aa5560a1cd96a3590dd.jpeg](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p39)
+[![ppQWNVJ.jpg](https://s1.ax1x.com/2023/03/13/ppQWNVJ.jpg)](https://imgse.com/i/ppQWNVJ)
 
 If we need assets with the main domain baidu.com but with subdomains containing the keyword "test" where the "test" keyword may have other characters before or after it, the FOFA query would be:
 
 `host*="*test*.baidu.com"`
-![22bc6a3e67ba8b0d7778edb61c8d1ebe.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p40)
+[![ppQWJrF.jpg](https://s1.ax1x.com/2023/03/13/ppQWJrF.jpg)](https://imgse.com/i/ppQWJrF)
 
 If we need to search for assets with the main domain baidu.com but with subdomains containing the keyword "test" followed by exactly one additional character, the FOFA query would be:
 
 `host*="test?.baidu.com"`
-![13d83e70eff3019e26398b089a6d495f.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p41)
+[![ppQW3vT.jpg](https://s1.ax1x.com/2023/03/13/ppQW3vT.jpg)](https://imgse.com/i/ppQW3vT)
 
 For example, if we need to search for subdomains with exactly five characters following the keyword "test", the FOFA query would be:
 
 `host*="?????.baidu.com"`
-![88e0e5f470618fa8248baeb6720c71cb.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p42)
+[![ppQWGKU.jpg](https://s1.ax1x.com/2023/03/13/ppQWGKU.jpg)](https://imgse.com/i/ppQWGKU)
 
 We can also perform multiple fuzzy searches by combining the search statements. 
 For example, if we need to search for assets with subdomains containing the keyword "test" and the main domain baidu.com, and then further filter out those with any characters after "test" and ".baidu.com", we can use the following FOFA query:
 
 `host*="test*.baidu.com.*"`
-![f38e82a62b1ba9332902a322b4ca36b5.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p43)
+[![ppQWUa9.jpg](https://s1.ax1x.com/2023/03/13/ppQWUa9.jpg)](https://imgse.com/i/ppQWUa9)
 
 Ohterwise, if we need to search for all domains containing the keyword "test" regardless of their position in the domain name, we can use the following FOFA query:
 
 `host*="*test*"`
-![0cdc1b587fc5c1beabb066c967918fe1.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p44)
+[![ppQWa5R.jpg](https://s1.ax1x.com/2023/03/13/ppQWa5R.jpg)](https://imgse.com/i/ppQWa5R)
 
 In this case, the "*" symbol represents a wildcard, which will match any character or string before or after the keyword "test" in the domain name. The search will filter out all assets with domains containing the keyword "test", regardless of any characters before or after it.
 
@@ -58,19 +58,19 @@ Through the previous sections, we have learned that fuzzy search can solve the p
 Let's take MySQL as an example: There are multiple versions of MySQL, and we will conduct a search on FOFA:
 
 `banner="mysql version"`
-![8ff9e14cdad26106470e7e810c1a6c50.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p45)
+[![ppQWwP1.jpg](https://s1.ax1x.com/2023/03/13/ppQWwP1.jpg)](https://imgse.com/i/ppQWwP1)
 
 As you can see, there are over 10 million results from the past year for all versions. We can now use fuzzy search to narrow down the search range by version.
 
 For example, if we want to search for all versions matching the pattern 5.?.*, we can use the following search query:
 
 `banner="mysql version" && banner*="5.?.*"`
-![b3490ce87d3d62c3140ce12ff9a306fc.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p46)
+[![ppQW08x.jpg](https://s1.ax1x.com/2023/03/13/ppQW08x.jpg)](https://imgse.com/i/ppQW08x)
 
 To further narrow down the search results, we can focus on the data with a specific version, such as 5.5.4+. The search query for this requirement can be formulated as follows on FOFA:
 
 `banner="mysql version" && banner*="5.5.4*"`
-![8e80e805f8a7dde205dabef3918a15c0.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p47)
+[![ppQWB26.jpg](https://s1.ax1x.com/2023/03/13/ppQWB26.jpg)](https://imgse.com/i/ppQWB26)
 
 This technique can be applied to various scenarios and is especially useful when dealing with partial or incomplete search terms. Keep exploring and experimenting with different search queries to uncover more insights and opportunities.
 
@@ -79,17 +79,17 @@ This technique can be applied to various scenarios and is especially useful when
 SNMP protocol has multiple versions, and I want to find them all at once using fuzzy search syntax.
 
 `protocol*="snmp*"`
-![5dd3cd4f77f5e85ba38d8ba1e796d887.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p48)
+[![ppQWDxK.png](https://s1.ax1x.com/2023/03/13/ppQWDxK.png)](https://imgse.com/i/ppQWDxK)
 
 Suddenly forgot the name of the cloud service provider "Cloudflare", use fuzzy search to quickly find the target you need.
 
 `cloud_name*="Cloud*"`
-![5a1a527fb815ee1d4e6de87d37c4c0eb.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p49)
+[![ppQWyrD.png](https://s1.ax1x.com/2023/03/13/ppQWyrD.png)](https://imgse.com/i/ppQWyrD)
 
 To search for assets with a four-digit port using fuzzy search for a known search result, you can use the following syntax in FOFA:
 
 `domain="fofa.info" && port*="????"`
-![a0a8daca0be9774c87aa49a74b26e6e5.png](evernotecid://DAF95B0C-1EED-411E-9588-86052DD6F582/appyinxiangcom/28854756/ENResource/p50)
+[![ppQWsKO.png](https://s1.ax1x.com/2023/03/13/ppQWsKO.png)](https://imgse.com/i/ppQWsKO)
 
 **What is Fuzzy Search?**
 
