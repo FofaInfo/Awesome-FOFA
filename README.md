@@ -1,1 +1,1 @@
-[:ledger: 中文 README]（https://github.com/FofaInfo/FOFA-Library/blob/main/README_zh.md "悬停显示"）
+[:ledger: 中文 README]（https://github.com/FofaInfo/FOFA-Library/blob/main/README_zh.md）
