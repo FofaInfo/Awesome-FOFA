@@ -20,11 +20,16 @@ Recently, for example, with the popularity of ChatGPT, we can use FOFA to search
 
 We can then search more accurately for websites that use the ChatGPT framework, as these websites’ titles may not include the “ChatGPT” keyword.
 
-By viewing the source code of these websites using FOFA, we discovered some common key features, such as "loading-wrap"  and "balls". Therefore, we can use FOFA to search for websites that include both “loading-wrap” and “balls” in the body of the website, in order to find all websites that use this open-source framework. After completing this step, the search results already include websites that use the same ChatGPT open-source framework.
-Next, we can add two filters: one to filter whether the website has a domain (is_domain=true), and the other to filter whether the certificate is validity (cert.is_valid=true). 
+By viewing the source code of these websites using FOFA, we discovered some common key features, such as "loading-wrap"  and "balls".
+
+Therefore, we can use FOFA to search for websites that include both “loading-wrap” and “balls” in the body of the website, in order to find all websites that use this open-source framework. After completing this step, the search results already include websites that use the same ChatGPT open-source framework.
+
+Next, we can add two filters: one to filter whether the website has a domain ```is_domain=true```, and the other to filter whether the certificate is validity ```cert.is_valid=true```. 
+
 Why filter these two items? By filtering based on these criteria, we can determine whether the website is prepared for long-term operation on the public network (to ensure stability of use), otherwise, the saved results may quickly become unusable if the owner takes them offline. At this point, our search syntax is websites that include the “loading-wrap” and “balls” features in the body of the website, have a domain, and have a valid certificate.
 
 ```body="loading-wrap" && body="balls" && is_domain=true && cert.is_valid=true```
+
 We can also filter the results based on the country/region of the IP address, for example, using the syntax && country="US", or directly clicking on the search results statistics on the left to only show websites with US IP addresses. 
 
 The search result syntax in this case would be:
