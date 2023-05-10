@@ -4,6 +4,7 @@
 <br>
 ## Get Started with FOFA
 [A Beginner’s Guide](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Get%20Started%20with%20FOFA/A%20Beginner%E2%80%98s%20Guide.md)
+
 [How to Get Free F-point from FOFA? ](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Get%20Started%20with%20FOFA/How%20to%20Get%20Free%20F-point%20from%20FOFA%3F.md)
 
 ## Basic scenario
