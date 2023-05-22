@@ -36,8 +36,8 @@ However, this approach presents additional challenges, such as handling multiple
 
 During our exploration, we came across an interesting observation. **When accessing a website using HTTPS, the browser checks whether the accessed host matches the one listed in the certificate. If there is a mismatch, the browser displays the certificate as untrusted.**
 
-However, most HTTPS websites' certificates only contain the domain name. If you directly access the website using its IP address, a certificate error will be returned. Nevertheless, in the asset review process, this information is necessary for the assets themselves. **Therefore, solely relying on host-certificate matching, similar to what browsers do, is insufficient. We also need to consider cases where the certificate is bound to an IP address.
-**
+However, most HTTPS websites' certificates only contain the domain name. If you directly access the website using its IP address, a certificate error will be returned. Nevertheless, in the asset review process, this information is necessary for the assets themselves. **Therefore, solely relying on host-certificate matching, similar to what browsers do, is insufficient. We also need to consider cases where the certificate is bound to an IP address.**
+
 [![p9oNFij.md.png](https://s1.ax1x.com/2023/05/22/p9oNFij.md.png)](https://imgse.com/i/p9oNFij)
 
 Based on these considerations, we have introduced two new certificate filtering syntaxes: `cert.is_match` and `cert.is_expired`.
