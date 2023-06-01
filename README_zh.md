@@ -12,4 +12,6 @@
 [在资产梳理过程中，如何通过证书有效地排除干扰](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/%E5%9C%A8%E8%B5%84%E4%BA%A7%E6%A2%B3%E7%90%86%E8%BF%87%E7%A8%8B%E4%B8%AD%EF%BC%8C%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E8%AF%81%E4%B9%A6%E6%9C%89%E6%95%88%E5%9C%B0%E6%8E%92%E9%99%A4%E5%B9%B2%E6%89%B0.md)
 <br>
 
+[以上帝视角进行资产梳理](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/%E4%BB%A5%E4%B8%8A%E5%B8%9D%E8%A7%86%E8%A7%92%E8%BF%9B%E8%A1%8C%E8%B5%84%E4%BA%A7%E6%A2%B3%E7%90%86.md)
+
 ## F&Q
