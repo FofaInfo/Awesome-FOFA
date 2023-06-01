@@ -12,4 +12,6 @@
 
 [How to effectively eliminate interference through certificates in the asset discovery](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/How%20to%20effectively%20eliminate%20interference%20through%20certificates%20in%20the%20asset%20discovery.md)
 
+[Asset Inventory from a God's Perspective](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Asset%20Inventory%20from%20a%20God%E2%80%98s%20Perspective.md)
+
 ## F&Q
