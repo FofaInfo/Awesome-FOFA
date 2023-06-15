@@ -14,4 +14,6 @@
 
 [Asset Inventory from a God's Perspective](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Asset%20Inventory%20from%20a%20God%E2%80%98s%20Perspective.md)
 
+[Unleash the Power of Workflow: Unleash Your Creativity in Open Site Discovery](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Unleash%20the%20Power%20of%20Workflow-%20Unleash%20Your%20Creativity%20in%20Open%20Site%20Discovery.md)
+
 ## F&Q
