@@ -20,7 +20,7 @@ When retrieving a large volume of data for the same search query, you can use th
 
 The difference between this interface and the basic interface is that it uses `nextid` for pagination instead of `page`. The `nextid` value is returned in each response, and if `nextid` is not passed in subsequent requests, it defaults to returning the first page of data.
 
-Official API documentation: [FOFA API Document](https://fofa.info/api)
+Official API documentation: [FOFA API Document](https://en.fofa.info/api)
 
 Dedicated API ➡️ Continuous Pagination API
 
