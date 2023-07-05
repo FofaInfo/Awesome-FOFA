@@ -16,4 +16,6 @@
 
 [Unleash the Power of Workflow: Unleash Your Creativity in Open Site Discovery](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Unleash%20the%20Power%20of%20Workflow-%20Unleash%20Your%20Creativity%20in%20Open%20Site%20Discovery.md)
 
-## F&Q
+[Best Approach for Fetching Large Amounts of Asset in FOFA](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Best%20Approach%20for%20Fetching%20Large%20Amounts%20of%20Asset%20in%20FOFA.md)
+
+## Useful FOFA API Tool
