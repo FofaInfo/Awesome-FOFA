@@ -21,7 +21,7 @@
 
 这个接口和基础接口的区别在于，不使用page进行翻页，引入nextid进行翻页。每次相应结果中会返回此值，不回传nextid时，默认返回第一页数据。
 
-官方API文档地址：[FOFA API Document](https://fofa.info/api)
+官方API文档地址：[FOFA API Document](https://en.fofa.info/api)
 
 专用接口➡️连续翻页接口
 
