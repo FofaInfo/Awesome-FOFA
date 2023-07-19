@@ -1,11 +1,8 @@
 ## Login Discovery
 - Find login pages in target assets and output them as a web navigation page.
 
-```HTML
-<video width="320" height="240" controls>
-    <source src="https://store.fofa.info/fofahub/doc/video/login_discovery_20230719.mp4)](https://store.fofa.info/fofahub/doc/video/login_discovery_20230719.mp4" type="video/mp4">
-</video>
-```
+
+[![login discovery](https://store.fofa.info/fofahub/doc/video/login_discovery_20230719.jpg)](https://store.fofa.info/fofahub/doc/video/login_discovery_20230719.mp4)
 
 
 By entering the FOFA query statement in the input box on the upper right side, you can search for corresponding assets in FOFA. Then, automatically filter all the obtained assets and retrieve the assets that have words such as "login" or "Login" on the web page. Finally, output the filtered assets as a web navigation.
