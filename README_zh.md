@@ -19,3 +19,12 @@
 [FOFA大数据量拉取的最佳方案](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%87%8F%E6%8B%89%E5%8F%96%E7%9A%84%E6%9C%80%E4%BD%B3%E6%96%B9%E6%A1%88.md)
 
 ## 有用的FOFA API工具
+
+## FOFAHub
+
+### 工作流介绍
+[开放站点查找](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/%E6%8E%A2%E7%B4%A2%E7%BD%91%E7%BB%9C%E4%B8%96%E7%95%8C%E7%9A%84%E5%88%A9%E5%99%A8%EF%BC%88%E8%AE%A4%E7%9F%A5%E7%AF%87%EF%BC%89.md)
+
+[登陆页面查找](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/FofaHub_ZH/%E7%99%BB%E9%99%86%E9%A1%B5%E9%9D%A2%E6%9F%A5%E6%89%BE.md)
+
+[独立IP筛选](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/FofaHub_ZH/%E7%8B%AC%E7%AB%8BIP%E7%AD%9B%E9%80%89.md)
