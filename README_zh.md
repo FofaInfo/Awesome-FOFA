@@ -22,7 +22,7 @@
 ## FOFAHub
 
 ### 工作流介绍
-[开放站点查找]([https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/%E6%8E%A2%E7%B4%A2%E7%BD%91%E7%BB%9C%E4%B8%96%E7%95%8C%E7%9A%84%E5%88%A9%E5%99%A8%EF%BC%88%E8%AE%A4%E7%9F%A5%E7%AF%87%EF%BC%89.md](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/Archive/Archive_ZH/%E6%8E%A2%E7%B4%A2%E7%BD%91%E7%BB%9C%E4%B8%96%E7%95%8C%E7%9A%84%E5%88%A9%E5%99%A8%EF%BC%88%E8%AE%A4%E7%9F%A5%E7%AF%87%EF%BC%89.md))
+[开放站点查找](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/Archive/Archive_ZH/%E6%8E%A2%E7%B4%A2%E7%BD%91%E7%BB%9C%E4%B8%96%E7%95%8C%E7%9A%84%E5%88%A9%E5%99%A8%EF%BC%88%E8%AE%A4%E7%9F%A5%E7%AF%87%EF%BC%89.md)
 
 [登陆页面查找](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/FofaHub_ZH/%E7%99%BB%E9%99%86%E9%A1%B5%E9%9D%A2%E6%9F%A5%E6%89%BE.md)
 
