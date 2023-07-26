@@ -19,6 +19,12 @@
 
 ## Useful FOFA API Tool
 
+[fofa-py](https://github.com/fofapro/fofa-py/blob/master/docs/README_EN.md)
+
+[fofa_Viewer](https://github.com/wgpsec/fofa_viewer/blob/master/README.en.md)
+
+[fofax](https://github.com/xiecat/fofax/blob/main/README.md)
+
 ## FOFAHub
 
 ### Workflow Intro
