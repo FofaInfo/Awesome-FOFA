@@ -19,6 +19,12 @@
 
 ## 有用的FOFA API工具
 
+[fofa-py](https://github.com/fofapro/fofa-py/blob/master/docs/README_CN.md)
+
+[fofa_Viewer](https://github.com/wgpsec/fofa_viewer/tree/master)
+
+[fofax](https://github.com/xiecat/fofax/tree/main)
+
 ## FOFAHub
 
 ### 工作流介绍
