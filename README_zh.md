@@ -25,6 +25,8 @@
 
 [fofax](https://github.com/xiecat/fofax/tree/main)
 
+[gofofa](https://github.com/LubyRuffy/gofofa)
+
 ## FOFAHub
 
 ### 工作流介绍
