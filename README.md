@@ -25,6 +25,8 @@
 
 [fofax](https://github.com/xiecat/fofax/blob/main/README.md)
 
+[gofofa](https://github.com/LubyRuffy/gofofa)
+
 ## FOFAHub
 
 ### Workflow Intro
