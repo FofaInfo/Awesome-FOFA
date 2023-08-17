@@ -8,6 +8,9 @@
 [How to Get Free F-point from FOFA? ](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Get%20Started%20with%20FOFA/How%20to%20Get%20Free%20F-point%20from%20FOFA%3F.md)
 
 ## Basic scenario
+
+[Elevating FOFA Search Efficiency through Novel Approaches](https://github.com/FofaInfo/Awesome-FOFA/blob/61e0e3ca4d783fb24ea5f5211663cfb3429f1334/Basic%20scenario/Elevating%20FOFA%20Search%20Efficiency%20through%20Novel%20Approaches.md)
+
 [How to Independently Refresh Your Assets on FOFA?](https://github.com/FofaInfo/Awesome-FOFA/blob/a8084af052b699899ada7e9f6b9adb05f349817f/Basic%20scenario/How%20to%20Independently%20Refresh%20Your%20Assets%20on%20FOFA%3F.md)
 
 [The correct way to use Fuzzy Search in FOFA](https://github.com/FofaInfo/FOFA-Library/blob/main/Basic%20scenario/The%20correct%20way%20to%20use%20Fuzzy%20Search%20in%20FOFA.md)
