@@ -7,6 +7,9 @@
 [官方教你如何白嫖F点？](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Get%20Started%20with%20FOFA/FOF%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97_ZH/%E5%AE%98%E6%96%B9%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E7%99%BD%E5%AB%96F%E7%82%B9%EF%BC%9F.md)
 
 ## 基础场景
+
+[提升FOFA效率的新途径](https://github.com/FofaInfo/Awesome-FOFA/blob/a0ccea7f20b764fcfc0b0fa0299676b04cb7e9be/Basic%20scenario/Basic%20scenario_ZH/%E6%8F%90%E5%8D%87FOFA%E6%90%9C%E7%B4%A2%E6%95%88%E7%8E%87%E7%9A%84%E6%96%B0%E9%80%94%E5%BE%84.md)
+
 [如何自主刷新自己在FOFA的资产？](https://github.com/FofaInfo/Awesome-FOFA/blob/2e87a1ee58cbc943c13344f47f876f02b1f7190d/Basic%20scenario/Basic%20scenario_ZH/%E5%A6%82%E4%BD%95%E8%87%AA%E4%B8%BB%E5%88%B7%E6%96%B0%E8%87%AA%E5%B7%B1%E5%9C%A8FOFA%E7%9A%84%E8%B5%84%E4%BA%A7%EF%BC%9F.md)
 
 [模糊搜索的正确姿势](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E6%A8%A1%E7%B3%8A%E6%90%9C%E7%B4%A2%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF.md)
