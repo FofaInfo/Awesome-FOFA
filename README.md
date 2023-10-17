@@ -40,3 +40,8 @@
 [Login Discovery](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/Login%20Discovery.md)
 
 [Filter Independent IP](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/Filter%20Independent%20IP.md)
+
+## Others
+
+### Great analysis report
+[Analysing a Widespread Microsoft 365 Credential Harvesting Campaign](https://www.bridewell.com/insights/blogs/detail/analysing-widespread-microsoft365-credential-harvesting-campaign)
