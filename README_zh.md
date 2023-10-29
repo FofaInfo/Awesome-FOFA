@@ -32,6 +32,8 @@
 
 [gofofa](https://github.com/LubyRuffy/gofofa)
 
+[fofa_search](https://github.com/thebatmanfuture/fofa_search)
+
 ## FOFAHub
 
 ### 工作流介绍
