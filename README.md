@@ -45,3 +45,4 @@
 
 ### Great analysis report
 [Analysing a Widespread Microsoft 365 Credential Harvesting Campaign](https://www.bridewell.com/insights/blogs/detail/analysing-widespread-microsoft365-credential-harvesting-campaign)
+[Uncovering the “Easy Stealer” Infostealer](https://www.bridewell.com/insights/blogs/detail/uncovering-the-easy-stealer-infostealer)
