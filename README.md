@@ -31,6 +31,7 @@
 [fofax](https://github.com/xiecat/fofax/blob/main/README.md)
 
 [gofofa](https://github.com/LubyRuffy/gofofa)
+[fofa_search](https://github.com/thebatmanfuture/fofa_search)
 
 ## FOFAHub
 
