@@ -110,7 +110,7 @@ FOFA's fuzzy search function provides users with more search flexibility and acc
 There are still many unexplored search methods waiting to be developed in FOFA's fuzzy search function. FOFA engineers can continuously explore and innovate according to different needs and scenarios to develop more efficient and accurate search methods.
 Personal members and above or F-point can use this function. We look forward to everyone's creative ideas!
 
-Our Official URL: https://fofa.info
+Our Official URL: https://en.fofa.info
 
 Contact us: service@baimaohui.net
 
