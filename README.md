@@ -52,3 +52,5 @@
 
 [Uncovering the “Easy Stealer” Infostealer](https://www.bridewell.com/insights/blogs/detail/uncovering-the-easy-stealer-infostealer)
 
+[HostingHunter Series: CHANG WAY TECHNOLOGIES CO. LIMITED](https://medium.com/@joshuapenny88/hostinghunter-series-chang-way-technologies-co-limited-a9ba4fce0f65)
+
