@@ -6,7 +6,7 @@
 
 ## 线索分析思路
 
-首先，我们通过社交媒体看到了一个白帽子发现的域名Indicators of Compromise（后续简称IOC），除此以外别无他物。
+首先，我们通过社交媒体看到了一个白帽子 [suyog41](https://twitter.com/suyog41/status/1717061493068640648) 发现的域名Indicators of Compromise（后续简称IOC），除此以外别无他物。
 
 ![bitter0.1](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.1.png)
 
@@ -17,7 +17,7 @@ webandersondesign.com
 
 我们今天就根据已知的内容，在互联网上发现同团伙的更多存活的资产信息。
 
-FOFA起手，发现它存在不明显的特征，多为403状态，开放443端口且拥有过证书。    
+[FOFA](https://en.fofa.info) 起手，发现它存在不明显的特征，多为403状态，开放443端口且拥有过证书。    
 
 ![bitter0.2](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.2.png)   
 
@@ -25,12 +25,12 @@ FOFA起手，发现它存在不明显的特征，多为403状态，开放443端�
 无法直接提取出有效特征，直接用原始特征进行搜索数量太大。
 
 
-不过第一步我们需要进行二次确认，该资产所对应的相关组织是否准确。对其域名使用其他OSINT工具进行查询，查找更多的有效信息。可以看到以下结果，通过查询确认这两条为APT蔓莲花组织（APT Bitter）的IOC。
+不过第一步我们需要进行二次确认，该资产所对应的相关组织是否准确。对其域名[微步](https://threatbook.io/)进行查询，查找更多的有效信息。可以看到以下结果，通过查询确认这两条为APT蔓莲花组织（APT Bitter）的IOC。
 
 ![bitter0.3](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.3.png)
 
 
-除此之外，通过谷歌搜索还发现，有开源项目收录了该IOC信息。
+除此之外，通过谷歌搜索还发现，有开源项目[maltrail](https://github.com/stamparm/maltrail) 收录了该IOC信息，它的作者是[Mikhail kasimov](https://twitter.com/500mk500) [Maltrail](https://twitter.com/maltrail)
 
 https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_bitter.txt
 
