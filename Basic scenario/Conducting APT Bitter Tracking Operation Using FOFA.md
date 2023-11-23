@@ -6,7 +6,8 @@ When using FOFA to expand assets, we may encounter a situation where we may not 
 
 ## Clue Analysis Thinking
 
-Firstly, we saw a domain name Indicator of Compromise (IOC for short) found by a white hat through social media, and nothing else.
+Firstly, we saw a domain name Indicator of Compromise (IOC for short) found by [suyog41](https://twitter.com/suyog41/status/1717061493068640648), 
+ through social media twitter, and nothing else.
 
 ![bitter0.1](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.1.png)
 
@@ -16,17 +17,17 @@ webandersondesign.com
 
 Based on the known content, we are going to discover more surviving asset information of the same group on the Internet today.
 
-Starting with FOFA, it was found that it has non-obvious features, mostly in the 403 state, with port 443 open and a certificate existed.
+Starting with [FOFA](https://en.fofa.info), it was found that it has non-obvious features, mostly in the 403 state, with port 443 open and a certificate existed.
 
 ![bitter0.2](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.2.png)
 
 No valid features can be directly extracted, the number of searches with the original features is too large.
 
-However, the first step we need to do is to reconfirm whether the related organization corresponding to this asset is accurate. Use other OSINT tools to query its domain name and find more valid information. The following results can be seen. Through the query, it is confirmed that these two are the IOC of the APT Bitter organization.
+However, the first step we need to do is to reconfirm whether the related team corresponding to this asset is accurate. Use [Threatbook](https://threatbook.io/) to query its domain name and find more valid information. The following results can be seen. Through the query, it is confirmed that these two are the IOC of the APT Bitter.
 
 ![bitter0.3](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.3.png)
 
-In addition, through Google search, it was found that an open-source project has included this IOC information.
+In addition, through Google search, it was found that an open-source project named [maltrail](https://github.com/stamparm/maltrail) credit by [Mikhail kasimov](https://twitter.com/500mk500) [Maltrail](https://twitter.com/maltrail) has included this IOC information.
 
 https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_bitter.txt
 
