@@ -9,8 +9,6 @@
 
 ## Basic scenario
 
-[Practical FOFA Asset Expansion- Unmasking the Trail of the 'Silver Fox' APT](https://github.com/FofaInfo/Awesome-FOFA/blob/5e54a179c7203cadc1e950e4e8f679caed5f9dee/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Unmasking%20the%20Trail%20of%20the%20'Silver%20Fox'%20APT.md)
-
 [Elevating FOFA Search Efficiency through Novel Approaches](https://github.com/FofaInfo/Awesome-FOFA/blob/61e0e3ca4d783fb24ea5f5211663cfb3429f1334/Basic%20scenario/Elevating%20FOFA%20Search%20Efficiency%20through%20Novel%20Approaches.md)
 
 [How to Independently Refresh Your Assets on FOFA?](https://github.com/FofaInfo/Awesome-FOFA/blob/a8084af052b699899ada7e9f6b9adb05f349817f/Basic%20scenario/How%20to%20Independently%20Refresh%20Your%20Assets%20on%20FOFA%3F.md)
@@ -23,6 +21,12 @@
 
 
 [Best Approach for Fetching Large Amounts of Asset in FOFA](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Best%20Approach%20for%20Fetching%20Large%20Amounts%20of%20Asset%20in%20FOFA.md)
+
+## Advanced Use Cases
+
+[Practical FOFA Asset Expansion- Unmasking the Trail of the 'Silver Fox' APT](https://github.com/FofaInfo/Awesome-FOFA/blob/5e54a179c7203cadc1e950e4e8f679caed5f9dee/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Unmasking%20the%20Trail%20of%20the%20'Silver%20Fox'%20APT.md)
+
+[Conducting APT Bitter Tracking Operation Using FOFA](https://github.com/FofaInfo/Awesome-FOFA/blob/159a94ef0098db6fa5093f8cefff4d133f25ed8c/Basic%20scenario/Conducting%20APT%20Bitter%20Tracking%20Operation%20Using%20FOFA.md)
 
 ## Useful FOFA API Tool
 
