@@ -28,6 +28,8 @@
 
 [Conducting APT Bitter Tracking Operation Using FOFA](https://github.com/FofaInfo/Awesome-FOFA/blob/159a94ef0098db6fa5093f8cefff4d133f25ed8c/Basic%20scenario/Conducting%20APT%20Bitter%20Tracking%20Operation%20Using%20FOFA.md)
 
+[Analysis and Tracing of the ObserverStealer](https://github.com/FofaInfo/Awesome-FOFA/blob/1c416977d7f4dc2dd9d6d7a13e15c3dea7bfa60a/Basic%20scenario/Analysis%20and%20Tracing%20of%20the%20ObserverStealer.md)
+
 ## Useful FOFA API Tool
 
 [fofa-py](https://github.com/fofapro/fofa-py/blob/master/docs/README_EN.md)
