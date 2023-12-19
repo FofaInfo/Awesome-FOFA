@@ -51,6 +51,8 @@
 
 [Filter Independent IP](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/Filter%20Independent%20IP.md)
 
+[Product Aggregation](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/Product%20Aggregation.md)
+
 ## Others
 
 ### Great analysis report
