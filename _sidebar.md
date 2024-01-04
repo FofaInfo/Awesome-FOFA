@@ -22,7 +22,7 @@
     * [gofofa](https://github.com/LubyRuffy/gofofa)
     * [fofa_search](https://github.com/thebatmanfuture/fofa_search)
 
-* [FOFAHub](FOFAHub/)
+* [FOFAHub](FofaHub/)
     * [Open Site Discovery](FofaHub/Archive/Unleash%20the%20Power%20of%20Workflow-%20Unleash%20Your%20Creativity%20in%20Open%20Site%20Discovery.md)
     * [Login Discovery](FofaHub/Login%20Discovery.md)
     * [Filter Independent IP](FofaHub/Filter%20Independent%20IP.md)
