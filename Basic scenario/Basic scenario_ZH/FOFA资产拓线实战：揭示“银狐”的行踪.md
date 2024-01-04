@@ -27,7 +27,7 @@ FOFA 在资产和线索拓线方面非常有优势，但是很多师傅并不是
 
 样本一来源于360沙箱云报告：《360沙箱提醒您：注意防范“银狐”木马》
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/1-silverfox.png)
+![](../../Storage/1-silverfox.png)
 
 根据已知线索，我们获得了域名"b.zjsdfg.cn"，和其解析的 IP 地址为 "211.99.98.76"。同时，根据截图的线索，我们了解到他的原文包含关键词 "钉钉电脑版" 和 "为企业解决办公协同问题"。   
 
@@ -41,7 +41,7 @@ body="钉钉电脑版" && body="为企业解决办公协同问题"
 
 首先，让我们通过 FOFA 进行 IP 查询，看看是否能找到与这个 IP 相关的信息。       
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/2-silverfox.png)
+![](../../Storage/2-silverfox.png)
 
 经过 IP 查询，我们确认该 IP 下的疑似钓鱼网站标题为 "钉钉电脑版-应用市场下载"，但这不是我们的重点。 
 
@@ -50,30 +50,30 @@ body="钉钉电脑版" && body="为企业解决办公协同问题"
 `ip="211.99.98.76"`
 
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/3-silverfox.png)
+![](../../Storage/3-silverfox.png)
 
 
 使用资产关联的SDK特征进行查询，我们获得了 24 条记录，其中包括 6 个独立的 IP 地址。
 
 `sdk_hash="5IcXyBJ8QrxlDLQFTl2DCHG0Z42JHfk6"`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/4-silverfox.png)
+![](../../Storage/4-silverfox.png)
 
 继续深挖他的其他特征，标题和body中的关键词，有18条资产和6个独立ip命中。
 
 `title="百度网盘电脑版官方下载" && body="模板"`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/5-silverfox.png)
+![](../../Storage/5-silverfox.png)
 
 我们根据搜到的资产，查看FOFA保存的网站原文，可以看到很有意思的变化趋势。
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/6-silverfox.png)
+![](../../Storage/6-silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/7-silverfox.png)
+![](../../Storage/7-silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/8--silverfox.png)
+![](../../Storage/8--silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/9-silverfox.png)
+![](../../Storage/9-silverfox.png)
 
 
 从我们打开的网页原文中，我们可以清晰地观察到木马的下载链接及其变化过程。我们可以看到它从本地存储过渡到了云存储，除此之外，还出现了明显的相似特征。
@@ -84,7 +84,7 @@ body="钉钉电脑版" && body="为企业解决办公协同问题"
 
 `js_name="static/js/quanzhan.js" && body="downapp" `
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/10-silverfox.png)
+![](../../Storage/10-silverfox.png)
 
 在完成了ip的线索拓线后，我们将聚焦在第二个线索，即样本原始页面所拥有的特征进行提取：
 
@@ -96,7 +96,7 @@ body="钉钉电脑版" && body="为企业解决办公协同问题"
 
 我们获得了 3 条搜索结果，这将帮助我们更深入地了解 "钉钉电脑版" 相关的信息。
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/11-silverfox.png)
+![](../../Storage/11-silverfox.png)
 
 此外，我们还发现了新的 IP 地址：43.248.190.199。通过对该 IP 进行搜索，我们发现了新的特征线索，其中新的标题线索为：
 
@@ -105,11 +105,11 @@ body="钉钉电脑版" && body="为企业解决办公协同问题"
 
 这个新线索将有助于进一步扩大我们的信息收集和分析，获取到3个独立域名。
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/12-silverfox.png)
+![](../../Storage/12-silverfox.png)
 
 通过分析他body中的js_md5 值加上上面发现的该工具的通用特征可以进一步进行语法拼接。
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/13-silverfox.png)
+![](../../Storage/13-silverfox.png)
 
 构造出来新的钓鱼网站查询语法是：
 
@@ -153,7 +153,7 @@ jy1.hehuashangwu11.xyz
 `host*="*.lianhuawangluo??.xyz" || host*="*.hehuashangwu??.xyz"
 `
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/14-silverfox.png)
+![](../../Storage/14-silverfox.png)
 
 到这里根据这个样本的资产，我们已经完成了很多特征的提取，我们最后在根据已知特征构建新的语法，梭哈一波。
 
@@ -161,21 +161,21 @@ jy1.hehuashangwu11.xyz
 
 成功查到136条资产，35个独立ip，通过搜索结果来看出现了更多的钓鱼网站，其中有抖音桌面、WPS、百度网盘、迅雷、winrar等等，这些钓鱼网站都伪装成与该木马相关，这是一个有趣的发现。
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/15-silverfox.png)
+![](../../Storage/15-silverfox.png)
 
 好了，我们整理整理思路，继续进行另一个样本的探索。
          
 样本二来源于火绒报告：《毒鼠”后门病毒再升级 通过伪造官网传播》
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/16-silverfox.png)
+![](../../Storage/16-silverfox.png)
 
 我们通过 FOFA 平台查询到了与该资产相关的信息。这次，我们将直接使用资产上标记的 fid 值进行拓线：
 
 `fid="VAaTqhs0Tw/lp4YjN7vWlw=="`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/17-silverfox.png)
+![](../../Storage/17-silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/18-silverfox.png)
+![](../../Storage/18-silverfox.png)
 
 根据当前资产线索，我们成功查询到了 12 条资产和 4 个独立的 IP 地址。通过这些信息，我们获得了木马的下载地址：
 
@@ -185,24 +185,24 @@ jy1.hehuashangwu11.xyz
 
 我们继续探索样本三，来自于微步在线的报告：《因势象形：警惕银狐组织发起新一轮钓鱼攻击》。
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/19-silverfox.png)
+![](../../Storage/19-silverfox.png)
 
 通过他的域名luthj.sbs进行查询，向之前一样获取其资产的关键特征进行裂变。 
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/20-silverfox.png)
+![](../../Storage/20-silverfox.png)
 
 当然不管是通过FOFA特有的FID指纹，还是使用上面提到的SDK特征都可以进行进一步的进行线索扩充，这次我们选择提取他body信息中的关键特征。
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/21-silverfox.png)
+![](../../Storage/21-silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/22-silverfox.png)
+![](../../Storage/22-silverfox.png)
 
 
 根据提取的特征，我们生成了以下搜索语句，找到了109条结果和10个独立的IP地址。
 
 `body="暗影⽹络⽂件传输系统 kiftd v1.1.0-RELEASE" && body="票据服务"`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/23-silverfox.png)
+![](../../Storage/23-silverfox.png)
 
 
 # 总结

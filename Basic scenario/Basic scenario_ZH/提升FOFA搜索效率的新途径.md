@@ -35,7 +35,7 @@ FID（FeatureID）是我们FOFA自己打的指纹信息，本身一长串的字�
 
 说了这么多，我们直接看这个功能是怎么用的吧！
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/c0652fc6ae2d11816f6ff8a74318eaf4a7d07af0/Storage/effiency1.gif)
+![](../../Storage/effiency1.gif)
 
 
 查看➡️多选➡️一键排除，敲什么键盘？不用敲！快速排除站群数据。
@@ -44,7 +44,7 @@ FID（FeatureID）是我们FOFA自己打的指纹信息，本身一长串的字�
 除此之外，另一个功能就简单的多了。直接添加了多选操作的按钮，多选添加或多选排除即可，直接点鼠标就完事了。像这样：
 
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/c0652fc6ae2d11816f6ff8a74318eaf4a7d07af0/Storage/effiency2.gif)
+![](../../Storage/effiency2.gif)
 
  
 

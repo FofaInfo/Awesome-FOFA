@@ -27,7 +27,7 @@ This article will focus on FOFA's expansion capabilities, sharing how to use FOF
 
 Sample one comes from the 360 Sandbox Cloud Report: "360沙箱提醒您：注意防范“银狐”木马"
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/1-silverfox.png)
+![](../Storage/1-silverfox.png)
 
 According to the known clues, we obtained the domain name "b.zjsdfg.cn", and its resolved IP address is "211.99.98.76". At the same time, according to the clues in the screenshot, we learned that the original text contains the keywords "钉钉电脑版" and "为企业解决办公协同问题".
 
@@ -41,7 +41,7 @@ body="钉钉电脑版" && body="为企业解决办公协同问题"
 
 First, let's use FOFA for IP queries to see if we can find information related to this IP.
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/2-silverfox.png)
+![](../Storage/2-silverfox.png)
 
 After the IP query, we confirmed that the suspected phishing website title under this IP is "钉钉电脑版-应用市场下载", but this is not our focus.
 
@@ -49,29 +49,29 @@ The key point is that under the same IP, we found new clues: "down.cstny.xyz". Y
 
 `ip="211.99.98.76"`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/3-silverfox.png)
+![](../Storage/3-silverfox.png)
 
 Using the SDK feature of asset association for query, we got 24 records, including 6 independent IP addresses.
 
 `sdk_hash="5IcXyBJ8QrxlDLQFTl2DCHG0Z42JHfk6"`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/4-silverfox.png)
+![](../Storage/4-silverfox.png)
 
 Continuing to dig deeper into its other features, there are 18 assets and 6 independent IPs hit by the keywords in the title and body.
 
 `title="百度网盘电脑版官方下载" && body="模板"`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/5-silverfox.png)
+![](../Storage/5-silverfox.png)
 
 We can see a very interesting trend of change according to the assets we found and the original text of the website saved by FOFA.
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/6-silverfox.png)
+![](../Storage/6-silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/7-silverfox.png)
+![](../Storage/7-silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/8--silverfox.png)
+![](../Storage/8--silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/9-silverfox.png)
+![](../Storage/9-silverfox.png)
 
 From the original text of the webpage we opened, we can clearly observe the download link of the Trojan and its changes. We can see that it has transitioned from local storage to cloud storage, and in addition, there are obvious similar features.
 
@@ -81,7 +81,7 @@ Therefore, we can continue to use the following search syntax to conduct in-dept
 
 `js_name="static/js/quanzhan.js" && body="downapp"`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/10-silverfox.png)
+![](../Storage/10-silverfox.png)
 
 
 After completing the clue expansion of the IP, we will focus on the second clue, that is, the extraction of the features possessed by the sample original page:
@@ -94,7 +94,7 @@ And this time according to the results, we found many new feature assets. Throug
 
 We got 3 search results, which will help us learn more about "钉钉电脑版".
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/11-silverfox.png)
+![](../Storage/11-silverfox.png)
 
 In addition, we also found a new IP address: 43.248.190.199. By searching for this IP, we found new feature clues, among which the new title clue is:
 
@@ -102,11 +102,11 @@ In addition, we also found a new IP address: 43.248.190.199. By searching for th
 
 This new clue will help to further expand our information collection and analysis, and get 3 independent domain names.
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/12-silverfox.png)
+![](../Storage/12-silverfox.png)
 
 By analyzing the js_md5 value in his body and the common features of this tool discovered above, further syntax concatenation can be performed.
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/13-silverfox.png)
+![](../Storage/13-silverfox.png)
 
 The new phishing website query syntax constructed is:
 
@@ -149,7 +149,7 @@ So we can use **FOFA's fuzzy search feature** to build a new query syntax, hitti
 
 `host*="*.lianhuawangluo??.xyz" || host*="*.hehuashangwu??.xyz"`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/14-silverfox.png)
+![](../Storage/14-silverfox.png)
 
 Here, based on the assets of this sample, we have completed a lot of feature extraction. We finally build new syntax based on known features and go all in.
 
@@ -157,21 +157,21 @@ Here, based on the assets of this sample, we have completed a lot of feature ext
 
 Successfully found 136 assets, 35 independent IPs, and more phishing websites appeared in the search results, including Douyin Desktop, WPS, Baidu Cloud Disk, Thunder, winrar, etc., these phishing websites are all disguised as related to this Trojan, this It is an interesting discovery.
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/15-silverfox.png)
+![](../Storage/15-silverfox.png)
 
 Okay, let's sort out our thoughts and continue to explore another sample.
 
 Sample two comes from the Huorong Report: ”毒鼠”后门病毒再升级 通过伪造官网传播
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/16-silverfox.png)
+![](../Storage/16-silverfox.png)
 
 We were able to find information related to this asset through the FOFA platform. This time, we will directly use the fid value marked on the asset for expansion:
 
 `fid="VAaTqhs0Tw/lp4YjN7vWlw=="`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/17-silverfox.png)
+![](../Storage/17-silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/18-silverfox.png)
+![](../Storage/18-silverfox.png)
 
 Based on the current asset clues, we successfully queried 12 assets and 4 independent IP addresses. Through this information, we obtained the download address of the Trojan:
 
@@ -181,24 +181,24 @@ By parsing its IP, we can query the user identity information bound to whois thr
 
 We continue to explore sample three, which comes from the Threatbook report: "因势象形：警惕银狐组织发起新一轮钓鱼攻击"
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/19-silverfox.png)
+![](../Storage/19-silverfox.png)
 
 By querying its domain name luthj.sbs, we get the key features of its assets for fission, just like before.
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/20-silverfox.png)
+![](../Storage/20-silverfox.png)
 
 Of course, whether it is through FOFA's unique FID fingerprint, or using the SDK features mentioned above, you can further expand the clues. This time we choose to extract the key features in his body information.
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/21-silverfox.png)
+![](../Storage/21-silverfox.png)
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/22-silverfox.png)
+![](../Storage/22-silverfox.png)
 
 
 Based on the extracted features, we generated the following search statement and found 109 results and 10 independent IP addresses.
 
 `body="暗影⽹络⽂件传输系统 kiftd v1.1.0-RELEASE" && body="票据服务"`
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/e42d8cf91263f8c55da353ed75aafe198c77bcf4/Storage/23-silverfox.png)
+![](../Storage/23-silverfox.png)
 
 
 # Conclusion

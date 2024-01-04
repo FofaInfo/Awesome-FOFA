@@ -9,7 +9,7 @@ Let's take a look at the current new solutions available: one for efficiently re
 ### 1. Page Download
 For users who do not require real-time data and need to fetch a large amount of data at once, page download is the most stable option. It allows for downloading large datasets with a maximum of 10 million records in a single click. The download process takes approximately 1 hour and 40 minutes for 10 million records and is delivered in a compressed format. Although it takes relatively longer, it provides greater stability.
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/8e7780b05422abacc98a14821a25d9ab4fcd604d/Storage/search_next1.png)
+![](../Storage/search_next1.png)
 
 Note: When exporting fields that include large fields such as banner/header/cert/body/structinfo/icon, the maximum supported download limit is 100,000 records per request.
 
@@ -32,7 +32,7 @@ curl -X GET "https://fofa.info/api/v1/search/next?qbase64=dGl0bGU9IueZvuW6piI%3D
 
 If you prefer not to make manual changes, no problem. We have already updated this interface in the official Python SDK library, which can be executed via the command line. Below are the relevant links and a demonstration:
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/84df55d4d17379222eb9df49209c6f4912723c8a/Storage/Image.gif)
+![](../Storage/Image.gif)
 
 From the animated demonstration, you can see that the SDK not only supports one-time delivery of large data export tasks but also enables real-time retrieval of dynamic assets, making it more stable than regular interfaces.
 

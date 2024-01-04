@@ -20,13 +20,13 @@ We redefined requirements and final objectives. We selected features that facili
 
 Enough talk – let's see how this feature works!
 
-![Efficiency GIF 1](https://github.com/FofaInfo/Awesome-FOFA/blob/c0652fc6ae2d11816f6ff8a74318eaf4a7d07af0/Storage/effiency1.gif)
+![Efficiency GIF 1](../Storage/effiency1.gif)
 
 View ➡️ Select Multiple ➡️ Exclude in One Click – What do you need to type on the keyboard? Nothing! Quickly exclude site cluster data.
 
 Moreover, the other feature is even simpler. We've directly added buttons for multiple selections, enabling easy addition or exclusion. Just click the mouse. Like this:
 
-![Efficiency GIF 2](https://github.com/FofaInfo/Awesome-FOFA/blob/c0652fc6ae2d11816f6ff8a74318eaf4a7d07af0/Storage/effiency2.gif)
+![Efficiency GIF 2](../Storage/effiency2.gif)
 
 ## Conclusion
 Understanding users, thinking like users, and striving to assist users in solving issues to improve their experience with our product have always been our main objectives. During feature implementation, we encountered challenges and took some detours. However, once we clarified the business goals and reconsidered the problems, we realized that nothing is insurmountable. In fact, sometimes the simplest methods are the most effective technological solutions. This perseverance and rethinking are the driving forces behind our journey.

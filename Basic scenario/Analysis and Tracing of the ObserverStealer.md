@@ -13,24 +13,24 @@ Therefore, today we will start from this angle, collect IOCs through various cha
 
 Recent monitoring has found that many teams profiting from selling personal user browser save information suddenly appeared on Telegram. Including user's personal account password, personal computer information, etc. And there are a large number of Chinese IP accounts in the samples.
 
-![observer1](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer1.png)
+![observer1](../Storage/observerstealer/observer1.png)
 
 From the sample data they gave, it was found that this is a team called stealc steader, and it can be seen that after parsing the sample data, the account and password saved in the browser by the user will appear directly.
 
-![observer2](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer2.png)
+![observer2](../Storage/observerstealer/observer2.png)
 
-![observer3](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer3.png)
+![observer3](../Storage/observerstealer/observer3.png)
 
-![observer4](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer4.png)
+![observer4](../Storage/observerstealer/observer4.png)
 
 Even according to the sample, you can see the screenshots of the controlled person.
 
-![observer5](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer5.png)
+![observer5](../Storage/observerstealer/observer5.png)
 
 
 We continued to search through these clues and found this TG account. It is inferred from this account that this organization comes from the Russian-speaking region, and they have long been advertising and selling data on xss.is and exploit.in.
 
-![observer6](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer6.png)
+![observer6](../Storage/observerstealer/observer6.png)
 
 **Internet Retrieval**
 
@@ -41,9 +41,9 @@ Group-IB revealed that someone was selling user browser saved account password i
 
 From the tweet information of Group-IB, it can be found that this platform can directly generate exe executable files and collect information on the relevant computer, and the sample data screenshots disclosed by the platform are very similar to the data structure we obtained!
 
-![observer7](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer7.png)
+![observer7](../Storage/observerstealer/observer7.png)
 
-![observer8](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer8.png)
+![observer8](../Storage/observerstealer/observer8.png)
 
 **Trojan Sample Analysis**
 
@@ -57,7 +57,7 @@ Then, they will continuously send TXT and image documents to the external linked
 Through these three samples, we obtained related paths and initial C2 addresses. Research has also found that these trojans have different attack behaviors, which shows that not only one team is performing these operations.
 
 
-![observer9](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer9.png)
+![observer9](../Storage/observerstealer/observer9.png)
 
 ```
 path:          
@@ -82,7 +82,7 @@ After the above few methods, we obtained some samples. Next, we will use FOFA to
 
 [icon_hash="-1529439559"](https://en.fofa.info/result?qbase64=aWNvbl9oYXNoPSItMTUyOTQzOTU1OSI%3D)
 
-![observer10](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer10.png)
+![observer10](../Storage/observerstealer/observer10.png)
 
 **Clue 2:** The C2 address feature of the sample
 
@@ -90,7 +90,7 @@ Every time the sample trojan loads the DLL remotely, it needs to be verified onc
 
 [ip="5.42.64.13"](https://en.fofa.info/result?qbase64=aXA9IjUuNDIuNjQuMTMi)
 
-![observer11](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer11.png)
+![observer11](../Storage/observerstealer/observer11.png)
 
 
 The search syntax can be obtained by splicing these two features, but the result is a bit too much, which is not normal.
@@ -98,7 +98,7 @@ The search syntax can be obtained by splicing these two features, but the result
 [banner="access-control-expose-headers: Content-Type, Authorization" && banner="404 Not Found"](https://en.fofa.info/result?qbase64=YmFubmVyPSJhY2Nlc3MtY29udHJvbC1leHBvc2UtaGVhZGVyczogQ29udGVudC1UeXBlLCBBdXRob3JpemF0aW9uIiAmJiBiYW5uZXI9IjQwNCBOb3QgRm91bmQi)
 
 
-![observer12](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer12.png)
+![observer12](../Storage/observerstealer/observer12.png)
 
 
 We calmed down and re-analyzed. If all the behaviors are loaded through this platform, then the content of its 404 return page each time should be the same, so the length information can also be extracted, and only the assets that meet the three features are what we are looking for.
@@ -107,7 +107,7 @@ The newly generated syntax has 6 addresses and 5 independent IPs.
 
 [banner="access-control-expose-headers: Content-Type, Authorization"&&banner="404 Not Found" && banner="Content-Length: 40"](https://en.fofa.info/result?qbase64=YmFubmVyPSJhY2Nlc3MtY29udHJvbC1leHBvc2UtaGVhZGVyczogQ29udGVudC1UeXBlLCBBdXRob3JpemF0aW9uIiYmYmFubmVyPSI0MDQgTm90IEZvdW5kIiAmJiBiYW5uZXI9IkNvbnRlbnQtTGVuZ3RoOiA0MCI%3D)
 
-![observer13](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer13.png)
+![observer13](../Storage/observerstealer/observer13.png)
 
 
 After getting these assets, you can continue to query on the sample website to see if this will find more clues.
@@ -116,9 +116,9 @@ After getting these assets, you can continue to query on the sample website to s
 
 5.42.64.13: The earliest sample time is June 13, 2023. The feature of this sample is that the same process uses other C2 addresses to download exe executable files and upload txt documents.
 
-![observer14](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer14.png)
+![observer14](../Storage/observerstealer/observer14.png)
 
-![observer15](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer15.png)
+![observer15](../Storage/observerstealer/observer15.png)
 
 
 
@@ -133,23 +133,23 @@ The C2 address associated with it is:
 
 5.42.64.41: The earliest sample time is June 5, 2023. It is a new way of utilization. It will download and run malicious files through the way of shared file platform.
 
-![observer16](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer16.png)
+![observer16](../Storage/observerstealer/observer16.png)
 
 https://www.4sync.com/web/directDownload/5cAUlxF1/fOHYSFp2.2d5b0e87aace84bf3807a7c917adfb0d
 
-![observer17](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer17.png)
+![observer17](../Storage/observerstealer/observer17.png)
 
 **Result 3**    
 
 91.103.252.17: The earliest sample time is July 4, 2023. I found a different way of use from the above two results. It will load malicious files through the whitelist windowsupdate.com and godaddy.com for secondary use.
 
-![observer18](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer18.png)
+![observer18](../Storage/observerstealer/observer18.png)
 
 **Result 4** 
 
 77.73.134.51: The earliest sample time is May 15, 2023. This IP directly corresponds to the time and IP of the observer stealer organization demonstrating the platform.
 
-![observer19](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer19.png)
+![observer19](../Storage/observerstealer/observer19.png)
 
 Why choose these few result IOCs for analysis? Because they are very representative and can draw interesting conclusions.
 
@@ -163,7 +163,7 @@ We just found two useful IPs through the trojan association, which can be furthe
 
 First start with 5.42.66.1, found the familiar open port 3000, according to the results of related samples close display, this program visits the myliunx service mounted on port 80.
 
-![observer20](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer20.png)
+![observer20](../Storage/observerstealer/observer20.png)
 
 Now we know that this team usually loads DLLs through port 3000 and uses port 80 to POST file utilization. So, combining these two features, let's first search for results through the title and port 80.
 
@@ -171,7 +171,7 @@ There are 8 assets, 6 independent IPs.
 
 [title=="myLinx" && port="80"](https://en.fofa.info/result?qbase64=dGl0bGU9PSJteUxpbngiICYmIHBvcnQ9IjgwIg%3D%3D)
 
-![observer21](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer21.png)
+![observer21](../Storage/observerstealer/observer21.png)
 
 
 ```
@@ -189,13 +189,13 @@ We found that the IP belonging to the Eastern European region has opened port 30
 
 So it's basically confirmed that 77.91.76.15 and 5.42.66.1 are other C2 addresses of this team.
 
-![observer22](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer22.png)
+![observer22](../Storage/observerstealer/observer22.png)
 
-![observer23](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer23.png)
+![observer23](../Storage/observerstealer/observer23.png)
 
 Now, let's look at the second associated IP, 94.142.138.116. By searching on FOFA, we found it's a nginx service, which doesn't match some of the features we summarized above. However, surprisingly, port 8081 of this IP has deployed RisePro, which we suspect is a control machine for this team.
 
-![observer24](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer24.png)
+![observer24](../Storage/observerstealer/observer24.png)
 
 ```          
 77.91.76.15          

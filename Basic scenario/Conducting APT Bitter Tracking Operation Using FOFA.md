@@ -9,7 +9,7 @@ When using FOFA to expand assets, we may encounter a situation where we may not 
 Firstly, we saw a domain name Indicator of Compromise (IOC for short) found by [suyog41](https://twitter.com/suyog41/status/1717061493068640648), 
  through social media twitter, and nothing else.
 
-![bitter0.1](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.1.png)
+![bitter0.1](../Storage/bitter0.1.png)
 
 ```
 webandersondesign.com
@@ -19,19 +19,19 @@ Based on the known content, we are going to discover more surviving asset inform
 
 Starting with [FOFA](https://en.fofa.info), it was found that it has non-obvious features, mostly in the 403 state, with port 443 open and a certificate existed.
 
-![bitter0.2](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.2.png)
+![bitter0.2](../Storage/bitter0.2.png)
 
 No valid features can be directly extracted, the number of searches with the original features is too large.
 
 However, the first step we need to do is to reconfirm whether the related team corresponding to this asset is accurate. Use [Threatbook](https://threatbook.io/) to query its domain name and find more valid information. The following results can be seen. Through the query, it is confirmed that these two are the IOC of the APT Bitter.
 
-![bitter0.3](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.3.png)
+![bitter0.3](../Storage/bitter0.3.png)
 
 In addition, through Google search, it was found that an open-source project named [maltrail](https://github.com/stamparm/maltrail) credit by [Mikhail kasimov](https://twitter.com/500mk500) [Maltrail](https://twitter.com/maltrail) has included this IOC information.
 
 https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_bitter.txt
 
-![bitter0.4](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.4.png)
+![bitter0.4](../Storage/bitter0.4.png)
 
 After having more than two IOC information, the next step is to extract the common features of multiple IOC. The overall idea of this step is to compare the common parts of the two IOC, such as title, body, cert, etc.
 
@@ -39,7 +39,7 @@ At the same time, public information shows that the main attack method of this T
 
 **Domain/Random second-level directory/Random name PHP file? Parameter=username*computername**
 
-![bitter6](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter6.png)
+![bitter6](../Storage/bitter6.png)
 
 Through the analysis of the public samples, we found that their features on FOFA are as follows:
 
@@ -52,7 +52,7 @@ Through the analysis of the public samples, we found that their features on FOFA
 
 But in fact, the range of these general features is too large, belonging to the general features of LiteSpeed.
 
-![bitter7](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter7.png)
+![bitter7](../Storage/bitter7.png)
 
 Don't be discouraged, the point is here, let's see what useful characteristics we can extract. Through comparative analysis, more clues are found:
 
@@ -64,9 +64,9 @@ Don't be discouraged, the point is here, let's see what useful characteristics w
 5. The website does not have a Favicon icon
 ```
 
-![bitter8](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter8.png)
+![bitter8](../Storage/bitter8.png)
 
-![bitter9](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter9.png)
+![bitter9](../Storage/bitter9.png)
 
 So we first integrate these features at hand and start with the known feature splicing.
 
@@ -92,7 +92,7 @@ The preliminary syntax splicing results are as follows:
 header='Alt-Svc: h3=":443"' && title="403 Forbidden" && header="Content-Length: 1229" && port="443" && server="LiteSpeed" && cert.issuer.cn="R3" && domain!="" && cert.is_valid=true && cert.is_expired=false && icon_hash="" && cert.subject.cn*="*.*" && cname!="" && after="2023-08-01"
 ```
 
-![bitter10](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter10.png)
+![bitter10](../Storage/bitter10.png)
 
 To be on the safe side, we need to verify the correctness of the extracted features above to confirm whether it is a containment relationship with the sample.
 
@@ -102,7 +102,7 @@ So add `host="webandersondesign.com"`
 header='Alt-Svc: h3=":443"' && title="403 Forbidden" && header="Content-Length: 1229" && port="443" && server="LiteSpeed" && cert.issuer.cn="R3" && domain!="" && cert.is_valid=true && cert.is_expired=false && icon_hash="" && cert.subject.cn*="*.*" && cname!="" && after="2023-08-01" && host="webandersondesign.com"
 ```
 
-![bitter11](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter11.png)
+![bitter11](../Storage/bitter11.png)
 
 The current result range is still relatively rough, the next step can continue to analyze its public samples.
 
@@ -117,11 +117,11 @@ Integrate the related Team information publicly disclosed into our grammar, as f
 header='Alt-Svc: h3=":443"' && title="403 Forbidden" && header="Content-Length: 1229" && port="443" && server="LiteSpeed" && cert.issuer.cn="R3" && domain!="" && cert.is_valid=true && cert.is_expired=false && icon_hash="" && cert.subject.cn*="*.*" && cname!="" && (org="ARTERIA Networks Corporation" || org="Advania Island ehf" || org="HOSTWINDS" || org="Host Sailor Ltd" || org="Akamai Connected Cloud" || org="NAMECHEAP-NET" || org="Iws Networks LLC" || org="Verdina Ltd." || org="AMAZON-02" || org="Melbikomas UAB" || org="GROUP-IID-01" || org="GLOBALCOMPASS" || org="Contabo GmbH" || org="INCAPSULA" || org="Neerja Softwares Pvt Ltd" || org="Commission on Science and Technology for" || org="Belcloud LTD" || org="DIGITALOCEAN-ASN" || org="QUICKPACKET")
 ```
 
-![bitter12](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter12.png)
+![bitter12](../Storage/bitter12.png)
 
 Randomly query from the results here to the threat intelligence platform, just take the first one to try, you can see that some domain names have been marked as the tags of the Bitter Team (APT Bitter) or malicious tags.
 
-![bitter13](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter13.png)
+![bitter13](../Storage/bitter13.png)
 
 Then the last step, we perform collision matching through the URL PATH collected from the public samples.
 
@@ -138,11 +138,11 @@ The specific collision syntax is as follows:
 fofax -q ' header="Alt-Svc" && title="403 Forbidden" && header="Content-Length: 1229" && port="443" && cert.is_valid=true && cert.is_expired=false && icon_hash="" && cert.subject.cn*="*.*" && server="LiteSpeed" && cert.issuer.cn="R3" && cname!="" && domain!="" && (org="ARTERIA Networks Corporation" || org="Advania Island ehf" || org="HOSTWINDS" || org="Host Sailor Ltd" || org="Akamai Connected Cloud" || org="NAMECHEAP-NET" || org="Iws Networks LLC" || org="Verdina Ltd." || org="AMAZON-02" || org="Melbikomas UAB" || org="GROUP-IID-01" || org="GLOBALCOMPASS" || org="Contabo GmbH" || org="INCAPSULA" || org="Neerja Softwares Pvt Ltd" || org="Commission on Science and Technology for" || org="Belcloud LTD" || org="DIGITALOCEAN-ASN" || org="QUICKPACKET")' -fs 1000 | httpx -mc 404 -path "/c4ca4238a0b923820dcc509a6f75849b" |seds/c4ca4238a0b923820dcc509a6f75849b//g | httpx -path apt_path.txt -sc -mc 200,403
 ```
 
-![bitter14](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter14.png)
+![bitter14](../Storage/bitter14.png)
 
-![bitter15](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter15.png)
+![bitter15](../Storage/bitter15.png)
 
-![bitter16](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter16.png)
+![bitter16](../Storage/bitter16.png)
 
 ## Conclusion
 

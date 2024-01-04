@@ -13,25 +13,25 @@
 
 近期监控发现TG上突然出现了许多以贩卖个人用户浏览器保存信息而获利的组织。包括用户的个人账号密码、个人电脑信息等。而且其中的样本存在大量中国IP的账号。
 
-![observer1](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer1.png)
+![observer1](../../Storage/observerstealer/observer1.png)
 
 从他们给的样本数据中，发现了这是一个叫做stealc steader（偷窃者）的组织，可以看到将样本数据进行解析后，直接会出现他们抓取到用户保存在浏览器的账号和密码。
 
-![observer2](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer2.png)
+![observer2](../../Storage/observerstealer/observer2.png)
 
-![observer3](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer3.png)
+![observer3](../../Storage/observerstealer/observer3.png)
 
-![observer4](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer4.png)
+![observer4](../../Storage/observerstealer/observer4.png)
 
 
 甚至根据样本能看到被控人的截图，好家伙。
 
-![observer5](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer5.png)
+![observer5](../../Storage/observerstealer/observer5.png)
 
 
 我们通过这些线索继续检索，发现了这个TG账号，由此账号推断，这个组织来自于俄语地区，且他们长期在xss.is和exploit.in上发广告卖数据。
 
-![observer6](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer6.png)
+![observer6](../../Storage/observerstealer/observer6.png)
 
 **互联网检索**
 
@@ -40,9 +40,9 @@
 
 通过Group-IB的推文信息可以发现，这个平台可以直接生成exe执行文件，并去收集相关电脑上的信息，而且披露的该平台的样本数据截图，和我们获取到的数据结构非常相似！
 
-![observer7](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer7.png)
+![observer7](../../Storage/observerstealer/observer7.png)
 
-![observer8](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer8.png)
+![observer8](../../Storage/observerstealer/observer8.png)
 
 
 
@@ -57,7 +57,7 @@
 通过这三个病毒样本，我们获得了相关的路径和初始的C2地址。研究还发现，这些病毒有不同的攻击行为方式，这表明并非只有一个组织在执行这些操作。
 
 
-![observer9](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer9.png)
+![observer9](../../Storage/observerstealer/observer9.png)
 
 ```
 path:          
@@ -83,7 +83,7 @@ http://91.103.252.17:8912
 
 [icon_hash="-1529439559"](https://en.fofa.info/result?qbase64=aWNvbl9oYXNoPSItMTUyOTQzOTU1OSI%3D)
 
-![observer10](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer10.png)
+![observer10](../../Storage/observerstealer/observer10.png)
 
 **线索2：** 病毒样本的C2地址特征 
 
@@ -91,7 +91,7 @@ http://91.103.252.17:8912
 
 [ip="5.42.64.13"](https://en.fofa.info/result?qbase64=aXA9IjUuNDIuNjQuMTMi)
 
-![observer11](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer11.png)
+![observer11](../../Storage/observerstealer/observer11.png)
 
 
 将这两个特征拼接可得搜索语法，但是结果有点太多了，不太正常。
@@ -99,7 +99,7 @@ http://91.103.252.17:8912
 [banner="access-control-expose-headers: Content-Type, Authorization" && banner="404 Not Found"](https://en.fofa.info/result?qbase64=YmFubmVyPSJhY2Nlc3MtY29udHJvbC1leHBvc2UtaGVhZGVyczogQ29udGVudC1UeXBlLCBBdXRob3JpemF0aW9uIiAmJiBiYW5uZXI9IjQwNCBOb3QgRm91bmQi)
 
 
-![observer12](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer12.png)
+![observer12](../../Storage/observerstealer/observer12.png)
 
 
 我们冷静下来重新分析，如果都通过该平台去加载这种行为，拿它每一次的404返回页面内容应该是一样的，那么长度信息也可以进行提取，同时满足三个特征的资产才是我们要找的。
@@ -108,7 +108,7 @@ http://91.103.252.17:8912
 
 [banner="access-control-expose-headers: Content-Type, Authorization"&&banner="404 Not Found" && banner="Content-Length: 40"](https://en.fofa.info/result?qbase64=YmFubmVyPSJhY2Nlc3MtY29udHJvbC1leHBvc2UtaGVhZGVyczogQ29udGVudC1UeXBlLCBBdXRob3JpemF0aW9uIiYmYmFubmVyPSI0MDQgTm90IEZvdW5kIiAmJiBiYW5uZXI9IkNvbnRlbnQtTGVuZ3RoOiA0MCI%3D)
 
-![observer13](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer13.png)
+![observer13](../../Storage/observerstealer/observer13.png)
 
 
 拿到这些资产后，可以继续去样本网站进行查询，试试这样是否会发现更多的线索。
@@ -117,9 +117,9 @@ http://91.103.252.17:8912
 
 5.42.64.13: 最早样本时间为2023年6月13日。该样本特征为同一个进程中利用了其他C2地址来下载exe可执行文件和上传txt文档。
 
-![observer14](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer14.png)
+![observer14](../../Storage/observerstealer/observer14.png)
 
-![observer15](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer15.png)
+![observer15](../../Storage/observerstealer/observer15.png)
 
 
 
@@ -134,23 +134,23 @@ http://91.103.252.17:8912
 
 5.42.64.41：最早样本时间为2023年6⽉5⽇。是一种新的利⽤⽅式，它会通过共享⽂件平台这种⽅式下载恶意⽂件并运⾏。
 
-![observer16](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer16.png)
+![observer16](../../Storage/observerstealer/observer16.png)
 
 https://www.4sync.com/web/directDownload/5cAUlxF1/fOHYSFp2.2d5b0e87aace84bf3807a7c917adfb0d
 
-![observer17](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer17.png)
+![observer17](../../Storage/observerstealer/observer17.png)
 
 **结果3**    
 
 91.103.252.17：最早样本时间为2023年7⽉4号。⼜发现了与上述两个结果不同的利⽤⽅式，它会通过⽩名单 windowsupdate.com跟godaddy.com去加载恶意⽂件进行⼆次利⽤。
 
-![observer18](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer18.png)
+![observer18](../../Storage/observerstealer/observer18.png)
 
 **结果4** 
 
 77.73.134.51：最早样本时间为2023年5⽉15号。该IP直接对应到了observer stealer组织演示该平台的时间跟IP。
 
-![observer19](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer19.png)
+![observer19](../../Storage/observerstealer/observer19.png)
 
 为什么要选取这几个结果IOC进行分析呢？因为它们很有代表性且可以得出有意思的结论。
 
@@ -162,7 +162,7 @@ https://www.4sync.com/web/directDownload/5cAUlxF1/fOHYSFp2.2d5b0e87aace84bf3807a
 
 先从5.42.66.1入手，发现了熟悉的开放端口3000，根据相关样本相近的结果显示，这个程序访问的80端口上挂载这一个myliunx的服务。
 
-![observer20](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer20.png)
+![observer20](../../Storage/observerstealer/observer20.png)
 
 现在已知，该组织一般会通过3000端口去加载DLL，80端口POST文件利用，那么结合这两个特征，先通过标题和80端口检索结果。
 
@@ -170,7 +170,7 @@ https://www.4sync.com/web/directDownload/5cAUlxF1/fOHYSFp2.2d5b0e87aace84bf3807a
 
 [title=="myLinx" && port="80"](https://en.fofa.info/result?qbase64=dGl0bGU9PSJteUxpbngiICYmIHBvcnQ9IjgwIg%3D%3D)
 
-![observer21](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer21.png)
+![observer21](../../Storage/observerstealer/observer21.png)
 
 
 ```
@@ -188,15 +188,15 @@ https://www.4sync.com/web/directDownload/5cAUlxF1/fOHYSFp2.2d5b0e87aace84bf3807a
 
 所以基本确认 77.91.76.15和5.42.66.1是这个组织另外的C2地址。
 
-![observer22](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer22.png)
+![observer22](../../Storage/observerstealer/observer22.png)
 
-![observer23](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer23.png)
+![observer23](../../Storage/observerstealer/observer23.png)
 
 
 
 现在看第二个关联IP，94.142.138.116。通过在FOFA上搜索，发现是一个nginx服务，这个服务器不符合我们上述分析总结的一些特征，不过这个ip的8081端口竟然部署了RisePro，怀疑是这个组织的一台控制机。
 
-![observer24](https://github.com/FofaInfo/Awesome-FOFA/blob/7e9463f6c9e52a10783537dbc008b89c4cd5535e/Storage/observerstealer/observer24.png)
+![observer24](../../Storage/observerstealer/observer24.png)
 
 
 这次关联ip的分析结果如下：

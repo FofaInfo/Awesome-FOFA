@@ -50,4 +50,3 @@ Please note that when a task is generated, the F-Points earned during execution 
 
 In the future, we will provide more ways to earn free F points. Wish you Happy hunting in https://en.fofa.info
 
-

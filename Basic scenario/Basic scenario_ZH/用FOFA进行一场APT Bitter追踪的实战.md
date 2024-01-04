@@ -8,7 +8,7 @@
 
 首先，我们通过社交媒体看到了一个白帽子 [suyog41](https://twitter.com/suyog41/status/1717061493068640648) 发现的域名Indicators of Compromise（后续简称IOC），除此以外别无他物。
 
-![bitter0.1](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.1.png)
+![bitter0.1](../../Storage/bitter0.1.png)
 
 ```
 webandersondesign.com
@@ -19,7 +19,7 @@ webandersondesign.com
 
 [FOFA](https://en.fofa.info) 起手，发现它存在不明显的特征，多为403状态，开放443端口且拥有过证书。    
 
-![bitter0.2](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.2.png)   
+![bitter0.2](../../Storage/bitter0.2.png)   
 
 
 无法直接提取出有效特征，直接用原始特征进行搜索数量太大。
@@ -27,14 +27,14 @@ webandersondesign.com
 
 不过第一步我们需要进行二次确认，该资产所对应的相关组织是否准确。对其域名[微步](https://threatbook.io/)进行查询，查找更多的有效信息。可以看到以下结果，通过查询确认这两条为APT蔓莲花组织（APT Bitter）的IOC。
 
-![bitter0.3](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.3.png)
+![bitter0.3](../../Storage/bitter0.3.png)
 
 
 除此之外，通过谷歌搜索还发现，有开源项目[maltrail](https://github.com/stamparm/maltrail) 收录了该IOC信息，它的作者是[Mikhail kasimov](https://twitter.com/500mk500) [Maltrail](https://twitter.com/maltrail)
 
 https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_bitter.txt
 
-![bitter0.4](https://github.com/FofaInfo/Awesome-FOFA/blob/6496bcf4f1d0d9aedd55e5f7488bab3a44faa774/Storage/bitter0.4.png)
+![bitter0.4](../../Storage/bitter0.4.png)
 
 
 
@@ -44,7 +44,7 @@ https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_bitte
 
 **域名/随机的二级目录/随机名的php文件？参数=username*computername**
 
-![bitter6](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter6.png)
+![bitter6](../../Storage/bitter6.png)
 
 
 
@@ -61,7 +61,7 @@ https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_bitte
 不过其实发现，这些通用特征的范围太大了，属于LiteSpeed的通用特征。
 
 
-![bitter7](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter7.png)
+![bitter7](../../Storage/bitter7.png)
 
 
 
@@ -77,9 +77,9 @@ https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_bitte
 
 
 
-![bitter8](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter8.png)
+![bitter8](../../Storage/bitter8.png)
 
-![bitter9](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter9.png)
+![bitter9](../../Storage/bitter9.png)
 
 
 所以我们先整合以下手头整理的这些特征，先进行已知特征的拼接。
@@ -108,7 +108,7 @@ header='Alt-Svc: h3=":443"' && title="403 Forbidden" && header="Content-Length: 
 ```
 
 
-![bitter10](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter10.png)
+![bitter10](../../Storage/bitter10.png)
 
 
 保险起见，我们要对以上的语法进行验证特征提取的正确性，确认和样本是不是包含关系。
@@ -120,7 +120,7 @@ header='Alt-Svc: h3=":443"' && title="403 Forbidden" && header="Content-Length: 
 ```
 
 
-![bitter11](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter11.png)
+![bitter11](../../Storage/bitter11.png)
 
 
 
@@ -138,11 +138,11 @@ header='Alt-Svc: h3=":443"' && title="403 Forbidden" && header="Content-Length: 
 ```
 
 
-![bitter12](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter12.png)
+![bitter12](../../Storage/bitter12.png)
 
 从这里的结果随机去威胁情报平台查询，就取第一条试试，能看到部分域名已经被标注成了蔓莲花组织（APT Bitter）标签或者恶意标签。
 
-![bitter13](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter13.png)
+![bitter13](../../Storage/bitter13.png)
 
 
 然后最后一步，我们通过公开的样本收集到的URL PATH 进行碰撞匹配。
@@ -160,11 +160,11 @@ https://github.com/xiecat/fofax
 fofax -q ' header="Alt-Svc" && title="403 Forbidden" && header="Content-Length: 1229" && port="443" && cert.is_valid=true && cert.is_expired=false && icon_hash="" && cert.subject.cn*="*.*" && server="LiteSpeed" && cert.issuer.cn="R3" && cname!="" && domain!="" && (org="ARTERIA Networks Corporation" || org="Advania Island ehf" || org="HOSTWINDS" || org="Host Sailor Ltd" || org="Akamai Connected Cloud" || org="NAMECHEAP-NET" || org="Iws Networks LLC" || org="Verdina Ltd." || org="AMAZON-02" || org="Melbikomas UAB" || org="GROUP-IID-01" || org="GLOBALCOMPASS" || org="Contabo GmbH" || org="INCAPSULA" || org="Neerja Softwares Pvt Ltd" || org="Commission on Science and Technology for" || org="Belcloud LTD" || org="DIGITALOCEAN-ASN" || org="QUICKPACKET")' -fs 1000 | httpx -mc 404 -path "/c4ca4238a0b923820dcc509a6f75849b" |seds/c4ca4238a0b923820dcc509a6f75849b//g | httpx -path apt_path.txt -sc -mc 200,403
 ```
 
-![bitter14](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter14.png)
+![bitter14](../../Storage/bitter14.png)
 
-![bitter15](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter15.png)
+![bitter15](../../Storage/bitter15.png)
 
-![bitter16](https://github.com/FofaInfo/Awesome-FOFA/blob/1f903e5d026f6e0b59f8751aaf749edec8a0c2dc/Storage/bitter16.png)
+![bitter16](../../Storage/bitter16.png)
 
 
 

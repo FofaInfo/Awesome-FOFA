@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Awesome-FOFA</title>
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/vue.css">
+  <style>
+    nav.app-nav li ul {
+      min-width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script >
+    const isZh = location.hash.startsWith('#/zh-cn/')
+    
+    window.$docsify = {
+      name: 'Awesome-FOFA',
+      repo: 'https://github.com/FofaInfo/Awesome-FOFA',
+      loadSidebar: true, //侧边栏
+      loadNavbar: '_navbar.md', //顶部导航
+
+      subMaxLevel: 2,
+      // hideSidebar: true,
+      basePath: '/',
+      // relativePath: true,
+      auto2top: true,
+      alias: {
+          '/zh-cn/_sidebar.md':
+            '/zh-cn/_sidebar.md',
+          '/zh-cn/':
+           'zh-cn/README.md',
+          '/zh-cn/(.*)':
+            '/$1',
+          '/':
+            'README.md',
+          
+      },
+      nameLink: {
+        '/zh-cn/': '#/zh-cn/',
+        '/': '#/',
+      },
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      // notFoundPage: './index.html',
+      search: {
+        noData: {
+          '/zh-cn/': '没有结果!',
+          '/': 'No results!',
+        },
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'Search',
+        },
+        pathNamespaces: ["/zh-cn"],
+        paths: 'auto'
+      },
+      homepage: isZh ? './zh-cn/README.md' : undefined,
+      markdown: {
+        renderer: {
+          image: function(href, ...args) {
+            return  isZh ? this.origin.image.call(this, href.replace(/(\.\.\/){2}/g, (match) => match + '../'), ...args) : this.origin.image.call(this,...arguments)
+          },
+        }
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="./assets/js/docsify.js"></script>
+  <script src="./assets/js/search.min.js"></script>
+  <script src="./assets/js/prism-bash.min.js"></script>
+  <script src="./assets/js/prism-jsx.js"></script>
+</body>
+</html>

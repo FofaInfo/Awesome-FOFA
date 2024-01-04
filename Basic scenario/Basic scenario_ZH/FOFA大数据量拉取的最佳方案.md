@@ -9,7 +9,7 @@
 ### 1. 页面下载
 对于没有实时要求，需要大数据量一次性获取的用户来说，页面下载是最稳定的一种方式。满足最高单次1000万数据量的下载，一键直接下载获取大数据。1000万条数据时间大约需要1小时40分钟，以压缩包的形式获取。他相对而言时间比较久，但更为稳定。
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/8e7780b05422abacc98a14821a25d9ab4fcd604d/Storage/search_next1.png)
+![](../../Storage/search_next1.png)
 
 
 注：当导出的字段包含banner/header/cert/body/structinfo/icon这种大字段的时候，最多支持单次10万条数据下载。
@@ -32,7 +32,7 @@
 
 懒得自己改？也没问题，我们已经完成了该接口在官方Python的SDK库的更新，通过命令行进行执行即可。下面是地址和演示：
 
-![](https://github.com/FofaInfo/Awesome-FOFA/blob/84df55d4d17379222eb9df49209c6f4912723c8a/Storage/Image.gif)
+![](../../Storage/Image.gif)
 
 
 我们可以从演示的动图中看到，该SDK不仅支持大数据量导出任务一次性下发，同样也支持实时动态资产调取，比普通的接口更加的稳定。
