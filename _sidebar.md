@@ -23,10 +23,10 @@
     * [fofa_search](https://github.com/thebatmanfuture/fofa_search)
 
 * [FOFAHub](FOFAHub/)
-    * [Open Site Discovery](FOFAHub/Archive/Unleash%20the%20Power%20of%20Workflow-%20Unleash%20Your%20Creativity%20in%20Open%20Site%20Discovery.md)
-    * [Login Discovery](FOFAHub/Login%20Discovery.md)
-    * [Filter Independent IP](FOFAHub/Filter%20Independent%20IP.md)
-    * [Product Aggregation](FOFAHub/Product%20Aggregation.md)
+    * [Open Site Discovery](FofaHub/Archive/Unleash%20the%20Power%20of%20Workflow-%20Unleash%20Your%20Creativity%20in%20Open%20Site%20Discovery.md)
+    * [Login Discovery](FofaHub/Login%20Discovery.md)
+    * [Filter Independent IP](FofaHub/Filter%20Independent%20IP.md)
+    * [Product Aggregation](FofaHub/Product%20Aggregation.md)
     
 * [Others](Others/)
     * [Analysing a Widespread Microsoft 365 Credential Harvesting Campaign](https://www.bridewell.com/insights/blogs/detail/analysing-widespread-microsoft365-credential-harvesting-campaign)
