@@ -52,7 +52,7 @@ Of course, the search results may also contain other relevant features, which ca
 
 We have already entered these search features, so you can quickly search for what you want by simply clicking on the corresponding filters.
 
-![](https://github.com/githublogin0101/111/blob/main/3.png)
+![](https://github.com/githublogin0101/111/blob/main/3.png?raw=true)
 
 And we’ll see what that is in the next chapter.
 
@@ -64,7 +64,7 @@ So what does FOFA do for these features? We combine and organize multiple key fe
 
 For example, if you want to search for a certain brand of camera, FOFA has organized the features of these cameras and formed a navigation tag. You only need to enter, for example, Hikvision cameras in the search box, and you can find the information of cameras of various brands that FOFA has organized. This greatly saves the time and energy of users searching for the information they need. Like this, by entering “hikvision”, you can reach your goal with one click:
 
-![](https://github.com/githublogin0101/111/blob/main/%E5%9B%BE%E7%89%872.gif)
+![](https://github.com/githublogin0101/111/blob/main/%E5%9B%BE%E7%89%872.gif?raw=true)
 
 ### Feature ID (FID)
 
@@ -78,7 +78,7 @@ It should be noted that the FID feature on the FOFA platform is a label formed b
 
 Continuing with the example of title=“chatgpt”, we can see that FID has identified websites built on different frameworks with the title “chatgpt”. FID can also help you find more assets with the same features directly.
 
-![](https://github.com/githublogin0101/111/blob/main/%E5%9B%BE%E7%89%87.gif)
+![](https://github.com/githublogin0101/111/blob/main/%E5%9B%BE%E7%89%87.gif?raw=true)
 
 ### Conclusion
 By using simple and easy-to-understand language and a simple example, we have introduced the basic search capabilities, special feature rule sets, and FID of FOFA. 
