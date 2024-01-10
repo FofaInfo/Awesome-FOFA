@@ -1,6 +1,5 @@
 # 基础场景
 
-* [FOFA资产拓线实战：揭示“银狐”的行踪](zh-cn/Basic%20scenario/Basic%20scenario_ZH/FOFA资产拓线实战：揭示“银狐”的行踪.md)
 * [提升FOFA效率的新途径](zh-cn/Basic%20scenario/Basic%20scenario_ZH/提升FOFA搜索效率的新途径.md)
 * [如何自主刷新自己在FOFA的资产？](zh-cn/Basic%20scenario/Basic%20scenario_ZH/如何自主刷新自己在FOFA的资产？.md)
 * [模糊搜索的正确姿势](zh-cn/Basic%20scenario/Basic%20scenario_ZH/FOFA模糊搜索的正确姿势.md)
