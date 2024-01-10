@@ -8,7 +8,6 @@
 
 ## 基础场景
 
-[FOFA资产拓线实战：揭示“银狐”的行踪](zh-cn/Basic%20scenario/Basic%20scenario_ZH/FOFA资产拓线实战：揭示“银狐”的行踪.md)
 
 [提升FOFA效率的新途径](zh-cn/Basic%20scenario/Basic%20scenario_ZH/提升FOFA搜索效率的新途径.md)
 
