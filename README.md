@@ -1,4 +1,4 @@
-# Awesome-FOFA Library
+# FOFA-Library
 
 [:ledger: 中文 README](https://github.com/FofaInfo/FOFA-Library/blob/main/README_zh.md)
 <br>
@@ -52,6 +52,8 @@
 [Filter Independent IP](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/Filter%20Independent%20IP.md)
 
 [Product Aggregation](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/Product%20Aggregation.md)
+
+[AI Finder](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/AI%20Finder.md)
 
 ## Others
 
