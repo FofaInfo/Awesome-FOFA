@@ -8,8 +8,6 @@
 
 ## 基础场景
 
-[FOFA资产拓线实战：揭示“银狐”的行踪](https://github.com/FofaInfo/Awesome-FOFA/blob/80d81458c3e6547d61148f736aadddc39fc7cc1a/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%EF%BC%9A%E6%8F%AD%E7%A4%BA%E2%80%9C%E9%93%B6%E7%8B%90%E2%80%9D%E7%9A%84%E8%A1%8C%E8%B8%AA.md)
-
 [提升FOFA效率的新途径](https://github.com/FofaInfo/Awesome-FOFA/blob/a0ccea7f20b764fcfc0b0fa0299676b04cb7e9be/Basic%20scenario/Basic%20scenario_ZH/%E6%8F%90%E5%8D%87FOFA%E6%90%9C%E7%B4%A2%E6%95%88%E7%8E%87%E7%9A%84%E6%96%B0%E9%80%94%E5%BE%84.md)
 
 [如何自主刷新自己在FOFA的资产？](https://github.com/FofaInfo/Awesome-FOFA/blob/2e87a1ee58cbc943c13344f47f876f02b1f7190d/Basic%20scenario/Basic%20scenario_ZH/%E5%A6%82%E4%BD%95%E8%87%AA%E4%B8%BB%E5%88%B7%E6%96%B0%E8%87%AA%E5%B7%B1%E5%9C%A8FOFA%E7%9A%84%E8%B5%84%E4%BA%A7%EF%BC%9F.md)
