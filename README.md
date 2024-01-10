@@ -53,6 +53,8 @@
 
 [Product Aggregation](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/Product%20Aggregation.md)
 
+[AI Finder](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/AI%20Finder.md)
+
 ## Others
 
 ### Great analysis report

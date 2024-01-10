@@ -52,3 +52,5 @@
 [独立IP筛选](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/FofaHub_ZH/%E7%8B%AC%E7%AB%8BIP%E7%AD%9B%E9%80%89.md)
 
 [资产聚合](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/FofaHub_ZH/资产聚合.md)
+
+[大模型查找](https://github.com/FofaInfo/Awesome-FOFA/blob/main/FofaHub/FofaHub_ZH/大模型查找.md)
