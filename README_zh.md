@@ -30,6 +30,8 @@
 
 [ObserverStealer 窃密木马分析及拓线](https://github.com/FofaInfo/Awesome-FOFA/blob/8a376fc2bbed611608cd757ab8b07b40e07032cd/Basic%20scenario/Basic%20scenario_ZH/ObserverStealer%20%E7%AA%83%E5%AF%86%E6%9C%A8%E9%A9%AC%E5%88%86%E6%9E%90%E5%8F%8A%E6%8B%93%E7%BA%BF.md)
 
+[FOFA资产拓线实战系列：响尾蛇APT组织](https://github.com/FofaInfo/Awesome-FOFA/blob/b1be450d3075ae3f2f49d1c8b3b0c0600b4a08f3/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9A%E5%93%8D%E5%B0%BE%E8%9B%87APT%E7%BB%84%E7%BB%87.md)
+
 ## 有用的FOFA API工具
 
 [fofa-py](https://github.com/fofapro/fofa-py/blob/master/docs/README_CN.md)
