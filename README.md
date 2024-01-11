@@ -30,6 +30,8 @@
 
 [Analysis and Tracing of the ObserverStealer](https://github.com/FofaInfo/Awesome-FOFA/blob/1c416977d7f4dc2dd9d6d7a13e15c3dea7bfa60a/Basic%20scenario/Analysis%20and%20Tracing%20of%20the%20ObserverStealer.md)
 
+[Practical FOFA Asset Expansion: Sidewinder APT](https://github.com/FofaInfo/Awesome-FOFA/blob/e270c63b8849999f44da81cb13746ca659bbbdea/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Sidewinder%20APT.md)
+
 ## Useful FOFA API Tool
 
 [fofa-py](https://github.com/fofapro/fofa-py/blob/master/docs/README_EN.md)
