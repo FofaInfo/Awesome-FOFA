@@ -19,6 +19,8 @@
 
 [以上帝视角进行资产梳理](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/%E4%BB%A5%E4%B8%8A%E5%B8%9D%E8%A7%86%E8%A7%92%E8%BF%9B%E8%A1%8C%E8%B5%84%E4%BA%A7%E6%A2%B3%E7%90%86.md)
 
+[如何使用FOFA玩转大模型](https://github.com/FofaInfo/Awesome-FOFA/blob/a443ab0503d484d2defb732228eabcc380ab0535/Basic%20scenario/Basic%20scenario_ZH/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8FOFA%E7%8E%A9%E8%BD%AC%E5%A4%A7%E6%A8%A1%E5%9E%8B.md)
+
 
 [FOFA大数据量拉取的最佳方案](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%87%8F%E6%8B%89%E5%8F%96%E7%9A%84%E6%9C%80%E4%BD%B3%E6%96%B9%E6%A1%88.md)
 
