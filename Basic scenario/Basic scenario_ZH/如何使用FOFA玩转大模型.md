@@ -1,4 +1,4 @@
-![ollama1](https://github.com/FofaInfo/Awesome-FOFA/blob/0f1feb4a48950e333cba5fb7944171eada95b773/Storage/ai_finder/ollama1.png)
+![ollama1](https://github.com/FofaInfo/Awesome-FOFA/blob/ab0c3fa0965d1095b66c80fddce381d28b401674/Storage/ai_finder/fofa%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB%E5%B0%81%E9%9D%A2.png)
 
 # 如何使用FOFA玩转大模型
 
