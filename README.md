@@ -34,6 +34,8 @@
 
 [Practical FOFA Asset Expansion: Sidewinder APT](https://github.com/FofaInfo/Awesome-FOFA/blob/e270c63b8849999f44da81cb13746ca659bbbdea/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Sidewinder%20APT.md)
 
+[Practical FOFA Asset Expansion: APT-C-23 Android Malware](https://github.com/FofaInfo/Awesome-FOFA/blob/3bd23cfc1e4850584320a5d90529913901396dca/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20APT-C-23%20Android%20Malware.md)
+
 ## Useful FOFA API Tool
 
 [fofa-py](https://github.com/fofapro/fofa-py/blob/master/docs/README_EN.md)
