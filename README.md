@@ -36,6 +36,8 @@
 
 [Practical FOFA Asset Expansion: APT-C-23 Android Malware](https://github.com/FofaInfo/Awesome-FOFA/blob/3bd23cfc1e4850584320a5d90529913901396dca/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20APT-C-23%20Android%20Malware.md)
 
+[Practical FOFA Asset Expansion：Ducktail](https://github.com/FofaInfo/Awesome-FOFA/blob/9ff7a1b8e225a0ed93e2776c37deb0d56c26e7bb/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion%EF%BC%9ADucktail.md)
+
 ## Useful FOFA API Tool
 
 [fofa-py](https://github.com/fofapro/fofa-py/blob/master/docs/README_EN.md)
