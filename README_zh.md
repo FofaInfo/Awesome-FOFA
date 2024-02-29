@@ -36,6 +36,8 @@
 
 [FOFA资产拓线实战系列：APT-C-23 Android端分析](https://github.com/FofaInfo/Awesome-FOFA/blob/8abae62e606569ead79e6520aa100486344fa563/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9AAPT-C-23%20Android%E7%AB%AF%E5%88%86%E6%9E%90.md)
 
+[FOFA资产拓线实战系列：Ducktail犯罪组织](https://github.com/FofaInfo/Awesome-FOFA/blob/8e8e7af5033f2c7b5cc03ceba39ef01953267ba2/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9ADucktail%E7%8A%AF%E7%BD%AA%E7%BB%84%E7%BB%87.md)
+
 ## 有用的FOFA API工具
 
 [fofa-py](https://github.com/fofapro/fofa-py/blob/master/docs/README_CN.md)
