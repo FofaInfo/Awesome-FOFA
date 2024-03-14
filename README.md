@@ -38,6 +38,8 @@
 
 [Practical FOFA Asset Expansion：Ducktail](https://github.com/FofaInfo/Awesome-FOFA/blob/9ff7a1b8e225a0ed93e2776c37deb0d56c26e7bb/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion%EF%BC%9ADucktail.md)
 
+[Practical FOFA Asset Discovery: COLDRIVER](https://github.com/FofaInfo/Awesome-FOFA/blob/f0fdb52c77d81c3cbe4a6dcdb3d59ac735f55991/Basic%20scenario/Practical%20FOFA%20Asset%20Discovery-%20COLDRIVER.md)
+
 ## Useful FOFA API Tool
 
 [fofa-py](https://github.com/fofapro/fofa-py/blob/master/docs/README_EN.md)
