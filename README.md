@@ -67,6 +67,8 @@
 
 ## Others
 
+[How did LLM become accomplices to crime?](https://github.com/FofaInfo/Awesome-FOFA/blob/615dd1a7201aa3b2e58b391d7681b598ad976930/Basic%20scenario/How%20did%20LLM%20become%20accomplices%20to%20crime%3F.md)
+
 ### Great analysis report
 [Analysing a Widespread Microsoft 365 Credential Harvesting Campaign](https://www.bridewell.com/insights/blogs/detail/analysing-widespread-microsoft365-credential-harvesting-campaign)
 
