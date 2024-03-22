@@ -52,6 +52,8 @@
 
 [fofa_search](https://github.com/thebatmanfuture/fofa_search)
 
+## 其他
+[大模型竟成为犯罪帮凶？](https://github.com/FofaInfo/Awesome-FOFA/blob/da1dc8926dcdb6808cd1eb471a636e6aaa06ee99/Basic%20scenario/Basic%20scenario_ZH/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%AB%9F%E6%88%90%E4%B8%BA%E7%8A%AF%E7%BD%AA%E5%B8%AE%E5%87%B6%EF%BC%9F.md)
 ## FOFAHub
 
 ### 工作流介绍
