@@ -81,3 +81,5 @@
 
 [Traque de l’infrastructure cybercriminelle de l’infostealer RisePro](https://projetfox.com/2023/11/traque-de-linfrastructure-cybercriminelle-de-linfostealer-risepro/)
 
+[New Threat Detected: Inside Our Discovery of the Log4j Campaign and Its XMRig Malware](https://www.uptycs.com/blog/log4j-campaign-xmrig-malware)
+
