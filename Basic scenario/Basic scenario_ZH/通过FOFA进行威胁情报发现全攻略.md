@@ -33,7 +33,9 @@
 
 ![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/55df01da-ae00-46c3-82c9-b398b741659e-1737021974512.png)
 
-天际友盟威胁情报中心\_情报查询\_情报订阅 https://redqueen.tj-un.com/home/advanced ![image](通过FOFA进行威胁情报发现全攻略.assets/6ed58241-4e94-4875-8354-f858919c73ce-1737021980299.png)
+天际友盟威胁情报中心\_情报查询\_情报订阅 https://redqueen.tj-un.com/home/advanced 
+
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/6ed58241-4e94-4875-8354-f858919c73ce-1737021980299.png)
 
 奇安信威胁情报中心 https://ti.qianxin.com/apt/?type=map
 
@@ -191,7 +193,7 @@ IOC若为已知组织，则直接获取该组织相关信息；若为未知组�
 
 在奇安信威胁情报中心打开离我们做拓线分析时间最接近的文章，[《MSI 文件滥用新趋势：新海莲花组织首度利用 MST 文件投递特马》](https://ti.qianxin.com/blog/articles/new%20-trend-in-msi-file-abuse-new-oceanlotus-group-first-to-use-mst-files-to-deliver-special-trojan-cn/)，文章中提到了“简历.pdf”是首次使用MSI文件滥用的新手法，其创建时间文件为10月9日。由此可以确认该组织这批样本从十月份就已经开始活跃。
 
-![image](ttps://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/8ffd8f9a-1797-44c0-891d-d132d5e7f687-1737022044789.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/8ffd8f9a-1797-44c0-891d-d132d5e7f687-1737022044789.png)
 
 # 拓线（IOC共同特征提取）
 
@@ -268,15 +270,15 @@ tls_version（TLS 协议版本）
 
 推特上一名安全研究员Cyber Team发布的[一篇帖子](https://mobile.x.com/Cyberteam008/status/1789156897318207976)分享了一个Lazarus组织常用的证书，该证书被重复用于多个域名。根据该证书的Serial Number可以唯一确定该证书。
 
-![image.png](ttps://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/84540997-9f87-4a0d-96d4-3d18baf652b7-1737022158472.png)
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/84540997-9f87-4a0d-96d4-3d18baf652b7-1737022158472.png)
 
 通过此特征最终拓线该组织6条独立IP和多个关联域名。
 
-![image.png](ttps://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/91160b79-0c70-4d61-8bc1-1a3d9b67594b-1737022159796.png)
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/91160b79-0c70-4d61-8bc1-1a3d9b67594b-1737022159796.png)
 
 ### 基于TLS指纹关联
 
-![4c82333898c1552e368ff35be6b0cac3.png](ttps://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/285195f3-05a5-400d-ade4-d24b090ba5a5-1737022166932.png)
+![4c82333898c1552e368ff35be6b0cac3.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/285195f3-05a5-400d-ade4-d24b090ba5a5-1737022166932.png)
 
 *   JA3方法用于收集Client Hello数据包中以下字段的十进制字节值：版本、可接受的密码、扩展列表、椭圆曲线密码和椭圆曲线密码格式，有助于识别客户端。JA3/S方法用于 SSL/TLS 通信的服务器端，指纹是使用 ServerHello 数据包中的属性 SSL 版本、密码和 SSLExtension生成的。**JA3、JA3/S主要基于流量，服务器面对不同客户端产生不同的JA3S指纹。**
     
@@ -287,15 +289,15 @@ tls_version（TLS 协议版本）
 
 可以通过特殊的JARM指纹来分辨服务器是否部署C2服务，例如，在 Github 上，由 ProjectDiscovery团队开发并维护的项目 “nuclei-templates”，其[脚本](https://github.com/projectdiscovery/nuclei-templates/tree/main/network/jarm/c2)可用于识别 C2 服务。
 
-![image.png](ttps://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/6e272bce-5d33-402c-a3b4-afacbf2a8155-1737022170171.png)
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/6e272bce-5d33-402c-a3b4-afacbf2a8155-1737022170171.png)
 
 其中使用cobalt-strike-c2的jarm指纹在FOFA搜索结果如下，显然数据量并不正常。
 
-![image.png](ttps://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/66b6e329-c8f9-4c2d-a25b-dd5dc597d853-1737022174478.png)
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/66b6e329-c8f9-4c2d-a25b-dd5dc597d853-1737022174478.png)
 
 这里还可以通过对app="COBALTSTRIKE-团队服务器"搜索结果的JARM反向搜索：
 
-![96b8b849-62c0-4b39-b39b-5da6ac95f9f0.png](ttps://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/6e677858-4a2d-4136-b630-d3b76fc84d82-1737022177498.png)
+![96b8b849-62c0-4b39-b39b-5da6ac95f9f0.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/6e677858-4a2d-4136-b630-d3b76fc84d82-1737022177498.png)
 
 ![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/8c8a265a-686a-4c21-bd8f-f0545cc94b01-1737022180881.png)
 
@@ -561,7 +563,7 @@ fofax -q 'header="404 Not Found" && header="Transfer-Encoding: chunked" && heade
 
 ### 其他情况
 
-有这样一个场景，通过分析IOC发现目标域名全部是https://xxx.com且无子域名，这种情况下仅依赖FOFA语法已无法实现需求所以需要对结果进行二次筛选。类似的情况在实际分析中一定还会遇到，所以需要具体情况具体分析。
+有这样一个场景，通过分析IOC发现目标域名全部是 \https://xxx.com 且无子域名，这种情况下仅依赖FOFA语法已无法实现需求所以需要对结果进行二次筛选。类似的情况在实际分析中一定还会遇到，所以需要具体情况具体分析。
 
 # 验证拓线结果
 
