@@ -47,7 +47,7 @@
 
 ### GitHub开源项目
 
-```brainfuck
+```
 https://github.com/stamparm/maltrail
 https://github.com/blackorbird/APT_REPORT
 ```
@@ -203,7 +203,7 @@ IOC若为已知组织，则直接获取该组织相关信息；若为未知组�
 
 **单一的字段有时不能完全代表网站的所有特征，通常我们需要组合字段形成FOFA语法**，以下提供一些可以用于拓线的字段：
 
-```brainfuck
+```
 fid（FOFA聚合多个关键特征形成的唯一标识符。通过FID，用户可以快速找到具有相似特征的网站资产‌）
 jarm（JARM 是一个活动的传输层安全 (TLS)服务器指纹识别工具）
 header_hash（FOFA的header_hash特征是指HTTP响应头信息的哈希值）
@@ -322,7 +322,7 @@ HTTP header中包括以下几种信息：
 
 以下是推特上一名安全研究员9823f\_分享的拓线例子：使用**HEDnsExtractor**(一款专门用于提取 DNS 流量中的数据包或域名的工具)和**Httpx**(一个快速的web应用侦查工具，它的模块可以高效的处理http请求和响应)借助分析。
 
-```brainfuck
+```
 HEDnsExtractor -target 206.188.196.37 -silent | httpx -title -tech-detect -location -radom-agent -silent
 
 HEDnsExtractor -target 206.188.196.37 -silent   针对目标ip206.188.196.37获取与该 IP 地址相关联的域名信息，同时减少输出的冗余信息。
@@ -336,14 +336,14 @@ httpx -title -tech-detect -location -radom-agent -silent  将刚刚所得域名�
 
  输出结果为：
 
-```brainfuck
+```
 http://hmaajijghahmhij.top [http://www.google.com] [Nginx 1.18.0,Ubuntu]
 http://mjjagccfegadkej.top [http://www.google.com] [Nginx 1.18.0,Ubuntu]
 ```
 
 根据结果，总结其共同特征：
 
-```brainfuck
+```
 组织均为“BLNWX”
 http响应的重定向位置均为"Location: http://www.google.com"
 server均为nginx/1.18.0 (Ubuntu)
@@ -352,7 +352,7 @@ server均为nginx/1.18.0 (Ubuntu)
 
 组合形成最终的FOFA语法:
 
-```brainfuck
+```
 org="BLNWX" && header="Location: http://www.google.com" && header="Server: nginx/1.18.0 (Ubuntu)" && domain!=""
 ```
 
@@ -372,7 +372,7 @@ Banner信息，也称为服务标识或服务Banner，是在客户端与服务�
 
 首先通过iocn\_hash收集这批路由器资产
 
-```brainfuck
+```
 icon_hash="-1438236046"
 ```
 
@@ -380,14 +380,14 @@ icon_hash="-1438236046"
 
 发现结果明显有误报，这时我们可以借助Gofofa工具批量去搜索符合以下特征的目标。
 
-```brainfuck
+```
 目标上开放22端口
 banner中含有”SSH-2.0-OpenSSH_6.7p2“
 ```
 
 生成Gofofa的命令为：
 
-```brainfuck
+```
 fofa search -i 1.txt --template "ip={} && port=22 && banner=SSH-2.0-OpenSSH_6.7p2" -o 2.csv
 
 ## -i 批量搜索的ip文件
@@ -403,7 +403,7 @@ fofa search -i 1.txt --template "ip={} && port=22 && banner=SSH-2.0-OpenSSH_6.7p
 
 参考[《FOFA资产拓线实战系列：响尾蛇APT组织》](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9A%E5%93%8D%E5%B0%BE%E8%9B%87APT%E7%BB%84%E7%BB%87.md)的拓线思路：
 
-```brainfuck
+```
 IOC：
 neger[.]site
 semain[.]tech
@@ -417,20 +417,20 @@ semain[.]tech
 
 在观察的过程中，发现三个IOC 的FOFA所搜结果内容，其中header均包含以下两个特征：
 
-```brainfuck
+```
 HTTP/1.1 404 Not Found 
 Content-Type: text/html
 ```
 
 但是所含这个两个特征的网站结果太多，可以暂时忽略。然后发现ASN组织等信息，都各不相同，也没有所谓的相同的title等。最后通过多方面观察和寻找共同点，发现他们有相同的JARM指纹，提取：
 
-```brainfuck
+```
 jarm="3fd3fd0003fd3fd21c3fd3fd3fd3fd703dc1bf20eb9604decefea997eabff7"
 ```
 
 单一特征判断存在很大的误差，所以需要去查找三条IOC的其他共性特征。发现前两个域名的header都存在404 Not Found、Server: nginx、Content-Type: text/html、Content-Length都为183或535个字符串，可以把这些特征也加入FOFA语法中继续查询。则目前语法为：
 
-```brainfuck
+```
 jarm="3fd3fd0003fd3fd21c3fd3fd3fd3fd703dc1bf20eb9604decefea997eabff7" && header="HTTP/1.1 404 Not Found" && header="Server: nginx" && header="Content-Type: text/html" && (header="Content-Length: 183" || header="Content-Length: 535")
 ```
 
@@ -482,7 +482,7 @@ FOFA规则的构造并非一蹴而就，单一的特征可能会出现成千上�
 
 比如：[《FOFA资产拓线实战系列：COLDRIVER》](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9ACOLDRIVER.md)对已有C2拓线
 
-```brainfuck
+```
 C2:
 45.133.216[.]15：3000
 ```
@@ -491,7 +491,7 @@ C2:
 
 线索一： 通过3000端口及端口的banner信息查询，发现17条记录16个IP。
 
-```brainfuck
+```
 banner="\x15\x03\x03\x00\x02\x022" && port="3000"
 ```
 
@@ -499,7 +499,7 @@ banner="\x15\x03\x03\x00\x02\x022" && port="3000"
 
 观察这17条数据后发现他们端口及banner信息高度相似，但是还是存在明显的数据误报。所以仅仅通过banner跟端口这种方式去查找不行需要进一步添加条件，于是我们把证书条件也进行添加，使用以下FOFA语法，得到了5条数据。
 
-```brainfuck
+```
 banner="\x15\x03\x03\x00\x02\x022" && port="3000" && cert="Internet Widgits Pty Ltd"
 ```
 
@@ -509,7 +509,7 @@ banner="\x15\x03\x03\x00\x02\x022" && port="3000" && cert="Internet Widgits Pty 
 
 ![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/c48e59c4-20ef-4f9b-be79-ae2c016445fa-1737022268360.png)
 
-```brainfuck
+```
 cert="Internet Widgits Pty Ltd" && cert="2023-06-23 15:59 UTC"
 ```
 
@@ -517,7 +517,7 @@ cert="Internet Widgits Pty Ltd" && cert="2023-06-23 15:59 UTC"
 
 将线索一二取交集，得到三条数据，发现为2023年8月到2023年10月。恰好位于Google威胁分析小组认为该组织活跃的时间内。
 
-```brainfuck
+```
 banner="\x15\x03\x03\x00\x02\x022" && port="3000" && cert="Internet Widgits Pty Ltd" && cert="2023-06-23 15:59 UTC"
 ```
 
@@ -529,7 +529,7 @@ banner="\x15\x03\x03\x00\x02\x022" && port="3000" && cert="Internet Widgits Pty 
 
 如：在文章[《FOFA资产拓线实战系列：Ducktail犯罪组织》](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9ADucktail%E7%8A%AF%E7%BD%AA%E7%BB%84%E7%BB%87.md)中对已有C2拓线，根据特征形成语法后发现拓线结果有上万个，由于该模板误报率过高，所以需要前期IOC分析时获取到的路径/api/check结合判断。这里的路径来自对样本的跟踪分析，通过跟踪初始IOC文件hash，放入VT沙箱跟踪其通联路径发现存在图片马，主动访问目标获得样本，继续分析得到该地址。除了在线沙箱也可以通过逆向分析，主动连接（虚拟机下尝试，注意避免命令执行）获取到目标更多的信息。
 
-```brainfuck
+```
 IP
 138.201.8[.]186
 FOFA语法
@@ -540,7 +540,7 @@ header="404 Not Found" && header="Transfer-Encoding: chunked" && header="Server:
 
 使用Fofax和Httpx（这里推荐使用官方开发的工具[Gofofa](https://github.com/FofaInfo/GoFOFA)~）进一步去除误报
 
-```brainfuck
+```
 fofax -q 'header="404 Not Found" && header="Transfer-Encoding: chunked" && header="Server: Microsoft-IIS" && icon_hash="" && title="" && header_hash="-324809210"' -fs 10000 | httpx -path /api/check -sc -cl -mc 200 --ml 355
 
 #-fs 返回结果数量
@@ -573,7 +573,7 @@ fofax -q 'header="404 Not Found" && header="Transfer-Encoding: chunked" && heade
 
 如：用以下FOFA语法拓线，结果有6个ip
 
-```brainfuck
+```
 banner="HTTP/1.1 404 Not Found" && banner="Server: nginx" && (port="4443" || port="8443") && banner="Content-Length: 146" && banner="Content-Type: text/html; charset=utf-8" && jarm="21d19d00021d21d00042d43d0000005ad20eceaf7f71ae0887d2ff117bf97f" && country!="CN"
 ```
 
