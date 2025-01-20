@@ -326,7 +326,7 @@ HTTP header中包括以下几种信息：
 HEDnsExtractor -target 206.188.196.37 -silent | httpx -title -tech-detect -location -radom-agent -silent
 
 HEDnsExtractor -target 206.188.196.37 -silent   针对目标ip206.188.196.37获取与该 IP 地址相关联的域名信息，同时减少输出的冗余信息。
-httpx -title -tech-detect -location -radom-agent -silent  将刚刚所得域名识别标题、网站指纹、重定向位置，同时随机化User-agent模拟正常的用户行为。
+httpx -title -tech-detect -location -radom-agent -silent  识别刚刚所得域名的标题、网站指纹、重定向位置，同时随机化User-agent模拟正常的用户行为。
 -title 显示网站标题
 -tech-detect 显示基于wappalyzer的探测网站指纹
 -location 显示重定向的location头
@@ -563,7 +563,7 @@ fofax -q 'header="404 Not Found" && header="Transfer-Encoding: chunked" && heade
 
 ### 其他情况
 
-有这样一个场景，通过分析IOC发现目标域名全部是 \https://xxx.com 且无子域名，这种情况下仅依赖FOFA语法已无法实现需求所以需要对结果进行二次筛选。类似的情况在实际分析中一定还会遇到，所以需要具体情况具体分析。
+有这样一个场景，通过分析IOC发现目标域名全部是 https://***.com 且无子域名，这种情况下仅依赖FOFA语法已无法实现需求所以需要对结果进行二次筛选。类似的情况在实际分析中一定还会遇到，所以需要具体情况具体分析。
 
 # 验证拓线结果
 
