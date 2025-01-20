@@ -559,7 +559,8 @@ fofax -q 'header="404 Not Found" && header="Transfer-Encoding: chunked" && heade
 
 当IOC以钓鱼网站的形式出现时，其上可能存留有APK等形式的附件，对附件进行逆向分析，归纳出其特点，对FOFA查询结果上的地址获取附件进行分析能够有效地增强拓线结果的信服力。以[《FOFA资产拓线实战系列：APT-C-23 Android端》](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9AAPT-C-23%20Android%E7%AB%AF%E5%88%86%E6%9E%90.md)为例，通过对APK逆向分析发现该类APP安装时会检测是否安装另一个APP。
 
-![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/b00c54de-5524-450e-90db-fb4895ad83ac-1737022294960.png)
+> 跳到声明GConfig.PT_PACKAGE_NAME的地方，PT_PACKAGE_NAME字段通过拼接的方式获取最终包名，经过拼接显示该包名为com.video.graphics，因此该应用会检测是否安装了另一个app，如果没有安装则提示更新为用户下载com.video.graphics并安装，行为模式一致，所以不用做进一步的分析了。
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/c23-39.png)
 
 ### 其他情况
 
