@@ -14,7 +14,7 @@ This article will systematically elaborate on the entire process of asset Discov
 
 # Workflow Chart
 
-![73702317338](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737449841098.png)
+![73702317338](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/en/1737449841098.png)
 
 # Input Source
 
@@ -24,7 +24,7 @@ This article will systematically elaborate on the entire process of asset Discov
 *    **Knowing the IOC, Seeking the latest live asset of the corresponding organization with Network Mapping**（If it is an IP of an unknown organization, skip directly to step two to confirm the organizational affiliation. If the organization can be identified, then directly confirm the relevant information of the organization; if it is an unknown organization or the organization has not been named, conduct the extension directly.）
 
 
-![image.png](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737450073141.png)
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737450073141.png)
 
 ## Sample Collection Channels
 
@@ -44,12 +44,12 @@ Below are several channels that regularly update the latest samples from the APT
 
 ### GitHub Open-Source Project
 
-```brainfuck
+```
 https://github.com/stamparm/maltrail
 https://github.com/blackorbird/APT_REPORT
 ```
 
-![img](A Comprehensive Guide to Threat Intelligence Discovery Using FOFA V_2.assets\835e0e98-9946-4d65-a3b6-149c318d80fc-1737021993561.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/835e0e98-9946-4d65-a3b6-149c318d80fc-1737021993561.png)
 
 ### Analysis Article on APT Organizations from the WeChat Official Accounts
 
@@ -72,7 +72,7 @@ There are many excellent security researchers or teams on Twitter who will relea
 - Yogesh Londhe：<https://x.com/suyog41>
 - Cyber Team：<https://x.com/Cyberteam008>
 - Group-IB Threat Intelligence：<https://x.com/GroupIB_TI>
-- Chris Duggan：<https://x.com/TLP_R3D
+- Chris Duggan：<https://x.com/TLP_R3D>
 
 ###  Sample Repository
 
@@ -84,7 +84,7 @@ https://www.virustotal.com/gui/
 https://s.threatbook.com/
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/a73ea2d1-8a1f-48be-ae1a-6559ef7dbea3.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/a73ea2d1-8a1f-48be-ae1a-6559ef7dbea3.png)
 
 
 
@@ -98,23 +98,23 @@ Generally, the prioritized method is to search for the IP/domain on various thre
 
 E.g.: The initial IOC is an IP 45.41.204\[.\]18, which is tagged as "OceanLotus Group" in both ThreatBook and Qianxin Threat Intelligence Center, which allows us to infer that this organization is the OceanLotus APT group.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451769006.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451769006.png)
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451774403.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451774403.png)
 
 E.g.: The domain sheicen\[.\]info is tagged as "Patchwork Group" in both ThreatBook and Qianxin Threat Intelligence Center, which allows us to infer that this organization is Patchwork.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451781064.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451781064.png)
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451786001.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451786001.png)
 
 Additionally, there are the following situations: The domain neger\[.\]site is only tagged as "Sidewinder Group" in ThreatBook, while the domain mofagov\[.\]live is only tagged as "Sidewinder" in the Qianxin Threat Intelligence Center. This is due to the different characteristics of each platform, and we need to cross-verify across multiple threat intelligence platforms to confirm the organization.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451803261.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451803261.png)
 
 
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451797269.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451797269.png)
 
 ### Common Threat Intelligence Communities
 
@@ -162,7 +162,7 @@ url: [https://ti.nsfocus.com/](https://ti.nsfocus.com/)
 
 Directly Search the domain sheicen\[.\]info, Through manual assistance to determine if this domain is a C2 domain controlled by the Patchwork Group.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451089777.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451089777.png)
 
 ## Obtain Related Information of the Organization
 
@@ -187,15 +187,15 @@ The intelligence websites shared above basically cover all the background inform
 
 E.g.: Search for the organization "OceanLotus" in the Qianxin Threat Intelligence Center, and in the group overview module, there is basic background information about the organization, such as attacker type, suspected origin, affected industries, attack methods, and more.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451104854.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451104854.png)
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451111458.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451111458.png)
 
 **Determination of Sample Activity Period:**
 
 Open the article closest to the time when we conduct asset discovery analysis in the Qianxin Threat Intelligence Center: ["New Trend in MSI File Abuse: New OceanLotus Group Uses MST Files to Deliver Emotet for the First Time"](https://ti.qianxin.com/blog/articles/new%20-trend-in-msi-file-abuse-new-oceanlotus-group-first-to-use-mst-files-to-deliver-special-trojan-cn/). The article mentions that 'Resume.pdf' is the first use of a new technique of MSI file abuse, with the creation date of the file being October 9th. This confirms that the organization's batch of samples has been active since October.
 
-![img](A Comprehensive Guide to Threat Intelligence Discovery Using FOFA V_2.assets/8ffd8f9a-1797-44c0-891d-d132d5e7f687.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/8ffd8f9a-1797-44c0-891d-d132d5e7f687.png)
 
 # Asset Discovery (IOC Common Feature Extraction)
 
@@ -205,7 +205,7 @@ Summarize the IOCs we have obtained. If there are multiple, extract their common
 
 **Sometimes a single field cannot fully represent all the characteristics of a website; usually, we need to combine fields to form FOFA syntax**. Below are some fields that can be used for asset discovery:
 
-```brainfuck
+```
 fid (A unique identifier formed by FOFA by aggregating multiple key features. Through FID, users can quickly find website assets with similar characteristics)
 jarm (JARM is an active Transport Layer Security (TLS) server fingerprinting tool)
 header_hash（FOFA's header_hash feature refers to the hash value of the HTTP response header information）
@@ -251,7 +251,7 @@ We already know which attributes can be used for asset discovery. For us to quic
 
 ### Certificate-based Fingerprint Association
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451155287.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451155287.png)
 
 The server certificate includes the following information:
 
@@ -272,15 +272,15 @@ E.g.：
 
 A security search from the Cyber Team sends out a [post](https://mobile.x.com/Cyberteam008/status/1789156897318207976), sharing a certificate commonly used by the Lazarus group, which has been reused across multiple domains. The certificate can be uniquely identified by its Serial Number.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/84540997-9f87-4a0d-96d4-3d18baf652b7.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/84540997-9f87-4a0d-96d4-3d18baf652b7.png)
 
 Through this characteristic, six independent IPs and multiple associated domains are found to belong to this organization after conducting asset discovery.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451183431.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451183431.png)
 
 ### TLS Fingerprint Association
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/285195f3-05a5-400d-ade4-d24b090ba5a5.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/285195f3-05a5-400d-ade4-d24b090ba5a5.png)
 
 * The JA3 method is used to collect the decimal byte values of the following fields in the Client Hello packet: version, acceptable ciphers, extension list, elliptic curve cipher, and elliptic curve cipher format, which helps in identifying the client. The JA3/S method is used for the server side of SSL/TLS communication, and the fingerprint is generated using the attributes in the ServerHello packet, such as SSL version, cipher, and SSLExtension. **JA3 and JA3/S are mainly based on traffic, where the server generates different JA3S fingerprints for different clients.**
   
@@ -291,23 +291,23 @@ E.g.:
 
 A special JARM fingerprint can be used to distinguish whether a server has deployed a C2 service. For example, on GitHub, the project "nuclei-templates" developed and maintained by the ProjectDiscovery team includes [scripts](https://github.com/projectdiscovery/nuclei-templates/tree/main/network/jarm/c2) that can be used to identify C2 services.
 
-![img](A Comprehensive Guide to Threat Intelligence Discovery Using FOFA V_2.assets/6e272bce-5d33-402c-a3b4-afacbf2a8155.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/6e272bce-5d33-402c-a3b4-afacbf2a8155.png)
 
 The JARM fingerprint using cobalt-strike-c2 in the FOFA search results is as follows, and clearly, the data volume is abnormal.
 
-![img](A Comprehensive Guide to Threat Intelligence Discovery Using FOFA V_2.assets/1737451346084.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451346084.png)
 
 Here, we can also perform a JARM reverse search on the search results for app="COBALTSTRIKE-Team Server".
 
-![img](A Comprehensive Guide to Threat Intelligence Discovery Using FOFA V_2.assets/6e677858-4a2d-4136-b630-d3b76fc84d82.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/6e677858-4a2d-4136-b630-d3b76fc84d82.png)
 
-![img](A Comprehensive Guide to Threat Intelligence Discovery Using FOFA V_2.assets/8c8a265a-686a-4c21-bd8f-f0545cc94b01.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/8c8a265a-686a-4c21-bd8f-f0545cc94b01.png)
 
 By comparing the data volume from the two search results here, it is clear that **the JARM fingerprint equals the C2 fingerprint ≠ service is C2**. Combining this with our previous practice, we can conclude the following: JARM is not very reliable for identifying upper-layer applications like CobaltStrike; it only serves as an auxiliary tool. In actual practice, it is necessary to combine multiple pieces of information for judgment.
 
 ### Header-based Fingerprint Association
 
-![img](A Comprehensive Guide to Threat Intelligence Discovery Using FOFA V_2.assets/1737451363791.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451363791.png)
 
 HTTP header includes information below：
 
@@ -324,7 +324,7 @@ E.g.:
 
 Below is an asset discovery example shared by a security researcher 9823f\_ on Twitter: using **HEDnsExtractor** (a tool specifically used to extract packets or domains from DNS traffic) and **Httpx** (a fast web application reconnaissance tool, whose modules can efficiently handle HTTP requests and responses) with the help of analysis.
 
-```brainfuck
+```
 HEDnsExtractor -target 206.188.196.37 -silent | httpx -title -tech-detect -location -radom-agent -silent
 
 HEDnsExtractor -target 206.188.196.37 -silent   (target the ip 206.188.196.37, obtain domain information associated with it while reducing redundant output)
@@ -340,14 +340,14 @@ httpx -title -tech-detect -location -radom-agent -silent  (Identify the title, w
 
  The output would be：
 
-```brainfuck
+```
 http://hmaajijghahmhij.top [http://www.google.com] [Nginx 1.18.0,Ubuntu]
 http://mjjagccfegadkej.top [http://www.google.com] [Nginx 1.18.0,Ubuntu]
 ```
 
 Based on the results, summarize their common features:
 
-```brainfuck
+```
 Both organizations are identified as "BLNWX"
 The redirect location in the HTTP response is consistently "Location: http://www.google.com"
 Both servers are identified as nginx/1.18.0 (Ubuntu)
@@ -356,15 +356,15 @@ Both domains are not empty
 
 Combine to form the final FOFA syntax: 
 
-```brainfuck
+```
 org="BLNWX" && header="Location: http://www.google.com" && header="Server: nginx/1.18.0 (Ubuntu)" && domain!=""
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/4544c729-cf46-4ed1-a59f-20c41fc01c0c.png)The asset discovery results in 33 independent IPs of this template type.
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/4544c729-cf46-4ed1-a59f-20c41fc01c0c.png)The asset discovery results in 33 independent IPs of this template type.
 
 ### Banner-based Fingerprint Association
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451481032.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451481032.png)
 
 Banner information, also known as service identification or service banner, is the initial information sent by the server to the client when a connection is established between the client and the server. This information typically includes the server's name, version number, operating system, supported protocols, etc. However, since **Banners can be manually modified, spoofed, or obfuscated, the accuracy of asset discovery and identification based solely on Banner field information cannot be guaranteed**. You can refer to the article ["Practical FOFA Asset Expansion: Sidewinder APT"](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9A%E5%93%8D%E5%B0%BE%E8%9B%87APT%E7%BB%84%E7%BB%87.md), which uses the combination of C2 banner and port characteristics for asset discovery.
 
@@ -376,30 +376,30 @@ E.g.: During the tracking of an APT, we found that after successfully compromisi
 
 First, collect this batch of router assets through iocn\_hash
 
-```brainfuck
+```
 icon_hash="-1438236046"
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451532264.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451532264.png)
 
 The results clearly show false positives. At this point, we can use the Gofofa tool to bulk search for targets that match the following characteristics.
 
-```brainfuck
+```
 Port 22 is open on the target
 The banner contains "SSH-2.0-OpenSSH_6.7p2"
 ```
 
 The Gofofa command is generated as follows:
 
-```brainfuck
+```
 fofa search -i 1.txt --template "ip={} && port=22 && banner=SSH-2.0-OpenSSH_6.7p2" -o 2.csv
 
 ## -i (ip file that is being bulk searched)
-##-template (bulk search)
+## -template (bulk search)
 ## -o (output file)
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/8dc2f8a0-9fe8-4512-9613-e868ac950212.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/8dc2f8a0-9fe8-4512-9613-e868ac950212.png)
 
 The output results are the IPs that match the characteristics of compromised routers.
 
@@ -407,7 +407,7 @@ The output results are the IPs that match the characteristics of compromised rou
 
 Refer to the asset discovery approach in ["Practical FOFA Asset Expansion: Sidewinder APT"](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9A%E5%93%8D%E5%B0%BE%E8%9B%87APT%E7%BB%84%E7%BB%87.md)
 
-```brainfuck
+```
 IOC：
 neger[.]site
 semain[.]tech
@@ -415,36 +415,36 @@ semain[.]tech
 
 Use FOFA to query these two domains consecutively and observe their characteristics.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/76d31a0b-fcf5-45f3-9e94-babedb17f3f2-1737450739886.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/76d31a0b-fcf5-45f3-9e94-babedb17f3f2-1737450739886.png)
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/06e572d7-758a-4229-bd7a-91c86a816145.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/06e572d7-758a-4229-bd7a-91c86a816145.png)
 
 During the observation process, three IOC results from FOFA were found, and the headers in all of them contained the following two characteristics:
 
-```brainfuck
+```
 HTTP/1.1 404 Not Found
 Content-Type: text/html
 ```
 
 However, the number of websites containing these two characteristics is too large and can be temporarily ignored. Then, it was found that information such as ASN organizations was different for each, and there was no common title or similar features. Finally, through extensive observation and finding common points, it was discovered that they share the same JARM fingerprint, which is extracted as follows:
 
-```brainfuck
+```
 jarm="3fd3fd0003fd3fd21c3fd3fd3fd3fd703dc1bf20eb9604decefea997eabff7"
 ```
 
 Relying on a single feature for judgment leads to a large margin of error, so it is necessary to find other common features among the three IOCs. It was found that the headers of the first two domains both contain "404 Not Found", "Server: nginx", "Content-Type: text/html", and "Content-Length" values of 183 or 535 characters. These characteristics can also be added to the FOFA syntax for further querying. The current syntax is as follows:
 
-```brainfuck
+```
 jarm="3fd3fd0003fd3fd21c3fd3fd3fd3fd703dc1bf20eb9604decefea997eabff7" && header="HTTP/1.1 404 Not Found" && header="Server: nginx" && header="Content-Type: text/html" && (header="Content-Length: 183" || header="Content-Length: 535")
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/0ab1e04e-d6c2-4566-a438-f53f3417fdf5.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/0ab1e04e-d6c2-4566-a438-f53f3417fdf5.png)
 
 # False Positive Handling
 
 Based on the asset discovery results above, we can perform false positive detection. If any of the following false positive scenarios occur, proceed with the false positive removal step.  After removing the false positives, perform another round of false positive detection on the current asset discovery results. Repeat this process until all detectable false positives are excluded, and output the final asset discovery results. The false positive handling process is shown in the figure below:
 
-![image.png](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737450788282.png)
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737450788282.png)
 
 ## False Positive Detection Scenarios
 
@@ -454,7 +454,7 @@ When the number of query results reaches the scale of tens of thousands, based o
 
 E.g.: simply querying ' **banner="404 Not Found"** ' yields 316493580 asset discovery results. Upon closer inspection, it was found that the selected characteristic lacks uniqueness, and there is a significant variation in the websites within the results.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/1737451573379.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451573379.png)
 
 ### Obvious False Positives Present
 
@@ -468,7 +468,7 @@ Compare the last updated time of the FOFA asset discovery result samples with th
 
 E.g.: When conducting asset discovery for OceanLotus in mid-October, based on the available clues, it could be inferred that this batch of samples had already been active since October. However, in the asset discovery results, we found an IP with a location in China, and the most recent update time was 2024-01-01, which is too far from our initial assumption of the activity period. Therefore, it is considered a false positive.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/a87b0cbc-e8d6-4c72-b0e9-75070fff2acf.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/a87b0cbc-e8d6-4c72-b0e9-75070fff2acf.png)
 
 ### Low/No Coverage in the Intelligence Community
 
@@ -486,46 +486,46 @@ Constructing FOFA rules is not an instant process. A single feature may result i
 
 For example, refer to ["Practical FOFA Asset Discovery: COLDRIVER"](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9ACOLDRIVER.md) on existing C2 asset discovery.
 
-```brainfuck
+```
 C2:
 45.133.216[.]15：3000
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/ba0e5f68-c2a0-46c9-b21c-3eddf18eaea3.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/ba0e5f68-c2a0-46c9-b21c-3eddf18eaea3.png)
 
 Clue 1: By querying port 3000 and the banner information of the port, 17 records and 16 IPs were found.
 
-```brainfuck
+```
 banner="\x15\x03\x03\x00\x02\x022" && port="3000"
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/be1e6de1-1a52-4171-b14b-4ec87eab1d03.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/be1e6de1-1a52-4171-b14b-4ec87eab1d03.png)
 
 After observing these 17 records, it was found that their ports and banner information were highly similar, but there were still obvious false positives. Therefore, simply searching through banners and ports is not enough, and further conditions need to be added. We then added certificate conditions as well and used the following FOFA syntax, which resulted in 5 records.
 
-```brainfuck
+```
 banner="\x15\x03\x03\x00\x02\x022" && port="3000" && cert="Internet Widgits Pty Ltd"
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/92843b90-bd72-4361-aafe-ef85e85e5e29.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/92843b90-bd72-4361-aafe-ef85e85e5e29.png)
 
 Clue 2: By searching through the certificates, we found that the certificate's Organization: Internet Widgits Pty Ltd should be the default value when configuring the certificate. Analysis revealed a key clue: the certificate validity period. We then conducted a search using the certificate's validity period and the default organization name.
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/c48e59c4-20ef-4f9b-be79-ae2c016445fa.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/c48e59c4-20ef-4f9b-be79-ae2c016445fa.png)
 
-```brainfuck
+```
 cert="Internet Widgits Pty Ltd" && cert="2023-06-23 15:59 UTC"
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/172acf79-b789-4659-a3e0-51d816690f27.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/172acf79-b789-4659-a3e0-51d816690f27.png)
 
 By taking the intersection of Clue 1 and Clue 2, we obtained three records, which were found to be from August 2023 to October 2023. This coincides with the period that the Google Threat Analysis Group considers the organization to be active.
 
-```brainfuck
+```
 banner="\x15\x03\x03\x00\x02\x022" && port="3000" && cert="Internet Widgits Pty Ltd" && cert="2023-06-23 15:59 UTC"
 ```
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/eb7b2444-d1af-4a14-ba20-1ead4a2e829c.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/eb7b2444-d1af-4a14-ba20-1ead4a2e829c.png)
 
 ### Path Collision
 
@@ -533,18 +533,18 @@ This method can be used when summarizing IOC features. If a fixed download path 
 
 For example:  in the article ["Practical FOFA Asset Expansion: Ducktail"](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%E7%B3%BB%E5%88%97%EF%BC%9ADucktail%E7%8A%AF%E7%BD%AA%E7%BB%84%E7%BB%87.md), C2 asset discovery was performed. After forming the syntax based on features, it was found that the discovery results numbered in the tens of thousands. Due to the high false positive rate of this template, it is necessary to combine the paths/api/check obtained during early IOC analysis for further judgment. The path here comes from the sample's trace analysis. By tracking the initial IOC file hash and submitting it to the VT sandbox, the communication path was traced, revealing picture-based malware. By actively accessing the target, the sample was obtained and further analysis led to this address. In addition to online sandboxes, reverse engineering and active connection (trying on a virtual machine, careful to avoid command execution) can also be used to gather more information from the target.
 
-```brainfuck
+```
 IP
 138.201.8[.]186
 FOFA Syntax
 header="404 Not Found" && header="Transfer-Encoding: chunked" && header="Server: Microsoft-IIS" && icon_hash="" && title="" && header_hash="-324809210"
 ```
 
-![img](A Comprehensive Guide to Threat Intelligence Discovery Using FOFA V_2.assets/28185971-04e0-40c9-bb8e-0d1b67389234.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/28185971-04e0-40c9-bb8e-0d1b67389234.png)
 
 Using Fofax and Httpx (It is recommended to use the officially developed tool [Gofofa](https://github.com/FofaInfo/GoFOFA)) to further remove false positives.
 
-```brainfuck
+```
 fofax -q 'header="404 Not Found" && header="Transfer-Encoding: chunked" && header="Server: Microsoft-IIS" && icon_hash="" && title="" && header_hash="-324809210"' -fs 10000 | httpx -path /api/check -sc -cl -mc 200 --ml 355
 
 #-fs (Number of Returned Results)
@@ -557,7 +557,7 @@ fofax -q 'header="404 Not Found" && header="Transfer-Encoding: chunked" && heade
 
 A batch of new live IOCs is obtained:
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/8b1216ef-da64-4097-bbcf-fdab186f096b.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/8b1216ef-da64-4097-bbcf-fdab186f096b.png)
 
 ### Reverse Engineering
 
@@ -565,7 +565,7 @@ When an IOC appears in the form of a phishing website, it may contain attachment
 
 > Jump to the place where GConfig.PT_PACKAGE_NAME is declared. The PT_PACKAGE_NAME field obtains the final package name through concatenation. After concatenation, the package name is shown as com.video.graphics. Therefore, this application will check whether another app is installed. If not, it will prompt the user to update, download com.video.graphics, and install it. Since the behavior patterns are consistent, there is no need for further analysis.
 >
-> ![img](https://github.com/FofaInfo/Awesome-FOFA/tree/main/Storage/Comprehensive_Guide/48c9b427-4ccd-4589-9db6-942c630e5f46.png)
+> ![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/48c9b427-4ccd-4589-9db6-942c630e5f46.png)
 
 
 
@@ -581,7 +581,7 @@ Search the asset discovery results on other threat intelligence platforms to see
 
 E.g.: Use the following FOFA syntax for asset discovery, and the results show 6 IPs
 
-```brainfuck
+```
 banner="HTTP/1.1 404 Not Found" && banner="Server: nginx" && (port="4443" || port="8443") && banner="Content-Length: 146" && banner="Content-Type: text/html; charset=utf-8" && jarm="21d19d00021d21d00042d43d0000005ad20eceaf7f71ae0887d2ff117bf97f" && country!="CN"
 ```
 
