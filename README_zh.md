@@ -26,6 +26,8 @@
 
 ## 进阶使用案例
 
+[通过FOFA进行威胁情报发现全攻略](https://github.com/FofaInfo/Awesome-FOFA/blob/031158712466e4b183a3ce2e73b450d31afc2765/Basic%20scenario/Basic%20scenario_ZH/%E9%80%9A%E8%BF%87FOFA%E8%BF%9B%E8%A1%8C%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5%E5%8F%91%E7%8E%B0%E5%85%A8%E6%94%BB%E7%95%A5.md)
+
 [FOFA资产拓线实战：揭示“银狐”的行踪](https://github.com/FofaInfo/Awesome-FOFA/blob/80d81458c3e6547d61148f736aadddc39fc7cc1a/Basic%20scenario/Basic%20scenario_ZH/FOFA%E8%B5%84%E4%BA%A7%E6%8B%93%E7%BA%BF%E5%AE%9E%E6%88%98%EF%BC%9A%E6%8F%AD%E7%A4%BA%E2%80%9C%E9%93%B6%E7%8B%90%E2%80%9D%E7%9A%84%E8%A1%8C%E8%B8%AA.md)
 
 [用FOFA进行一场APT Bitter追踪的实战](https://github.com/FofaInfo/Awesome-FOFA/blob/2a43177de0c1c4e567bd82e0c73c001c4a37343c/Basic%20scenario/Basic%20scenario_ZH/%E7%94%A8FOFA%E8%BF%9B%E8%A1%8C%E4%B8%80%E5%9C%BAAPT%20Bitter%E8%BF%BD%E8%B8%AA%E7%9A%84%E5%AE%9E%E6%88%98.md)
