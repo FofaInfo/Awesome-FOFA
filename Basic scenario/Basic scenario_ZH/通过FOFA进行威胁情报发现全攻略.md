@@ -4,13 +4,13 @@
 
 # 概述
 
-之前我们发布了一系列精彩纷呈的资产拓线实战记录文章，涵盖了 COLDRIVER、Ducktail 犯罪组织、响尾蛇 APT 组织等多个极具代表性的案例，还深入剖析了 ObserverStealer 窃密木马以及 APT Bitter 追踪实战，为广大读者揭开了网络威胁背后的神秘面纱，展示了如何利用 FOFA 在复杂的网络环境中抽丝剥茧，不断扩大搜索范围，挖掘出更多有价值的威胁情报。收获了非常多反馈和好评，因此我们决定将内部fofa资产拓线手册公开~。
+之前我们发布了一系列精彩纷呈的资产拓线实战记录文章，涵盖了 COLDRIVER、Ducktail 犯罪组织、响尾蛇 APT 组织等多个极具代表性的案例，还深入剖析了 ObserverStealer 窃密木马以及 APT Bitter 追踪实战，为广大读者揭开了网络威胁背后的神秘面纱，展示了如何利用 FOFA 在复杂的网络环境中抽丝剥茧，不断扩大搜索范围，挖掘出更多有价值的威胁情报，收获了非常多反馈和好评，因此我们决定将内部fofa资产拓线手册公开~
 
-本文将系统地梳理资产拓线的全流程，从基础流程的输入源场景、样本获取渠道、IOC 归属组织确认方法，到核心操作要点中的依据相关因素构建 FOFA 语法、处理误报、结果验证及报告输出等内容逐一展开，为大家呈现一套完整的FOFA威胁情报发现全攻略。
+本文将系统地梳理资产拓线的全流程，从基础流程的输入源场景、样本获取渠道、IOC 归属组织确认方法，到核心操作要点中的依据相关因素构建 FOFA 语法、处理误报、结果验证等内容逐一展开，为大家呈现一套完整的FOFA威胁情报发现全攻略。
 
 # 工作流程图
 
-![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/b08e77b7-09b8-4d13-940c-a76fc9321123-1737021963148.png)
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/7ef728c7-792f-4d6d-a62b-718cc9307e8e.png)
 
 # 输入源
 
@@ -18,10 +18,10 @@
 
 *    **已知组织找最新存活的IOC资产**（我们主动的找某APT组织去拓线，如海莲花组织，则针对性的根据海莲花组织获取最新活跃的样本）
     
-*    **已知IOC拓线找该IOC对应组织最新存活资产**（客户、上级直接给我们的任务，一般是未知组织的IP，则直接跳到步骤二去确认组织归属。若是能确认组织，则可以直接去确认组织相关信息；若是未知组织或组织未被命名，则直接进行拓线）
+*    **已知IOC拓线找该IOC对应组织最新存活资产**（若是未知组织的IP，则直接跳到步骤二去确认组织归属。若是能确认组织，则可以直接去确认组织相关信息；若是未知组织或组织未被命名，则直接进行拓线）
 
 
-![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/2319a1ba-7ec3-4d31-9f8c-7c0b6d378fdd-1737021969347.png) 
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/75555879-4A90-415c-8F18-21D882F719E6.png#pic_center) 
 
 ## 样本获取渠道
 
@@ -29,21 +29,13 @@
 
 ### 情报网站
 
-360APT全景雷达 https://apt.360.net/aptlist
+- 360APT全景雷达： https://apt.360.net/aptlist
 
-![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/55df01da-ae00-46c3-82c9-b398b741659e-1737021974512.png)
+- 天际友盟威胁情报中心\_情报查询\_情报订阅： https://redqueen.tj-un.com/home/advanced 
 
-天际友盟威胁情报中心\_情报查询\_情报订阅 https://redqueen.tj-un.com/home/advanced 
+- 奇安信威胁情报中心： https://ti.qianxin.com/apt/?type=map
 
-![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/6ed58241-4e94-4875-8354-f858919c73ce-1737021980299.png)
-
-奇安信威胁情报中心 https://ti.qianxin.com/apt/?type=map
-
-![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/0937ea3c-97b1-4b71-95ff-41cba363a94e-1737021985336.png)
-
-安全星图平台 https://ti.dbappsecurity.com.cn/apt/list
-
-![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/86ff206d-5b31-46ed-8cab-79b17a9c5042-1737021989335.png)
+-  安全星图平台： https://ti.dbappsecurity.com.cn/apt/list
 
 ### GitHub开源项目
 
@@ -68,13 +60,13 @@ https://github.com/blackorbird/APT_REPORT
 - 国家网络威胁情报共享开放平台
 - ThreatPage全球威胁情报
 
-###  推特上公开情报
+###  Twitter上公开情报
 
-推特上的安全研究员情报一般具有很强的实时性，具备很强的研究价值。
-
-Yogesh Londhe：[https://x.com/suyog41](https://x.com/suyog41)
-
-Cyber Team：[https://x.com/Cyberteam008](https://x.com/Cyberteam008)
+Twitter上有很多优秀的安全研究员或团队会输出一些有价值的情报，这些情报往往具备很强的时效性。由于篇幅有限，现仅列举历史拓线推文中曾引用推文的作者：
+- Yogesh Londhe：<https://x.com/suyog41>
+- Cyber Team：<https://x.com/Cyberteam008>
+- Group-IB Threat Intelligence：<https://x.com/GroupIB_TI>
+- Chris Duggan：<https://x.com/TLP_R3D>
 
 ###  样本库
 
@@ -185,7 +177,7 @@ IOC若为已知组织，则直接获取该组织相关信息；若为未知组�
 
 如：在奇安信威胁情报中心搜组织“海莲花”，在团伙概述模块有该组织的基本背景信息，如：攻击者类型、疑似来源、影响行业、攻击方式等等。
 
-![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/6d8550c2-a7e6-4707-843f-bb35db7d7dd2-1737022027195.png)
+![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/6d8550c2-a7e6-4707-843f-bb35db7d7dd2.png)
 
 ![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/Comprehensive_Guide/9d0e2450-bae7-4536-a23f-79d9a404cbce-1737022031092.png)
 
@@ -366,7 +358,7 @@ Banner信息，也称为服务标识或服务Banner，是在客户端与服务�
 
 ### 基于端口的指纹关联
 
-端口作为服务器上开放的通信接口，往往承载着重要的网络连接信息。**在某些情况下，攻击者会在远程访问工具（RAT）或钓鱼邮件中硬编码回连的端口号，以便与目标服务器建立隐蔽的连接。此外，在僵尸网络中，攻击者也可能通过开启诸如Telnet、SSH等协议来实现对受控设备的管理和控制。**因此，通过对特定端口的监测和分析，可以揭示出潜在的目标服务器，进而追踪并防御这些恶意活动。
+端口作为服务器上开放的通信接口，往往承载着重要的网络连接信息。在某些情况下，攻击者会在远程访问工具（RAT）或钓鱼邮件中硬编码回连的端口号，以便与目标服务器建立隐蔽的连接。此外，在僵尸网络中，攻击者也可能通过开启诸如Telnet、SSH等协议来实现对受控设备的管理和控制。因此，通过对特定端口的监测和分析，可以揭示出潜在的目标服务器，进而追踪并防御这些恶意活动。
 
 例如：在一次APT追踪实战中，我们发现APT组织在攻击路由器成功后会在目标上开放22端口，并且banner信息均带有“SSH-2.0-OpenSSH\_6.7p2”特征。因此可以通过先获取该路由资产再通过port关联的方式将可能沦为僵尸网络的路由筛选出来。
 
@@ -590,22 +582,6 @@ banner="HTTP/1.1 404 Not Found" && banner="Server: nginx" && (port="4443" || por
 |  45.41.204\[.\]18  |  海莲花组织  |  海莲花组织  |  恶意  |
 
 则说明这个FOFA语法的拓线结果可信度比较高。
-
-# 输出word报告
-
-拓线结束之后就当然就是写个Word总结一下我们的工作思路啦。
-
-报告的必要内容：
-
-*   **初始样本收集**
-    
-*   **APT组织背景信息**（组织名称、来源、主要影响国家/地区、影响行业、组织活跃时间、攻击方式）
-    
-*   **线索分析拓线过程**，该过程需要结合公司的产品（FOFA，Octra或者数据）和能力，例如使用fofa语法拓线。这个拓线过程要具有差异性和创新性，不能抄袭。
-    
-*    体现领先其他厂商报告的点，可以是更全面，更准确，更深入。例如通过拓线结果在几家威胁情报社区的覆盖度对比，突出该拓线结果的全面性。
-    
-*    **总结部分**：拓线结果推测该组织这批样本活跃时间、攻击手法、FOFA拓线模板等。（**总结前置！！！**）
 
 
 # 总结
