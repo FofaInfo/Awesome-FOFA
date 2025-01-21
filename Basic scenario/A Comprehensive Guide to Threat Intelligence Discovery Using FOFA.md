@@ -366,7 +366,7 @@ org="BLNWX" && header="Location: http://www.google.com" && header="Server: nginx
 
 ![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737451481032.png)
 
-Banner information, also known as service identification or service banner, is the initial information sent by the server to the client when a connection is established between the client and the server. This information typically includes the server's name, version number, operating system, supported protocols, etc. However, since **Banners can be manually modified, spoofed, or obfuscated, the accuracy of asset discovery and identification based solely on Banner field information cannot be guaranteed**. You can refer to the article [Practical FOFA Asset Expansion- Sidewinder APT](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Sidewinder%20APT.md), which uses the combination of C2 banner and port characteristics for asset discovery.
+Banner information, also known as service identification or service banner, is the initial information sent by the server to the client when a connection is established between the client and the server. This information typically includes the server's name, version number, operating system, supported protocols, etc. However, since **Banners can be manually modified, spoofed, or obfuscated, the accuracy of asset discovery and identification based solely on Banner field information cannot be guaranteed**. You can refer to the article [Practical FOFA Asset Expansion:Sidewinder APT](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Sidewinder%20APT.md), which uses the combination of C2 banner and port characteristics for asset discovery.
 
 ### Port-based Fingerprint Association
 
@@ -405,7 +405,7 @@ The output results are the IPs that match the characteristics of compromised rou
 
 ##  General Approach
 
-Refer to the asset discovery approach in [Practical FOFA Asset Expansion- Sidewinder APT](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Sidewinder%20APT.md)
+Refer to the asset discovery approach in [Practical FOFA Asset Expansion:Sidewinder APT](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Sidewinder%20APT.md)
 
 ```
 IOC：
@@ -484,7 +484,7 @@ The method that is prioritized to remove false positives is to readjust the FOFA
 
 Constructing FOFA rules is not an instant process. A single feature may result in thousands of outcomes, with obvious false positives. **We need to continually adjust and refine the summarized FOFA rules based on the results. First, we should consider whether the selected FOFA fields are reasonable and whether any key information has been omitted.** For example, whether the known C2 IP has temporal characteristics, such as the time it was detected on a port or the certificate's registration time, whether the certificate issuer is from the same vendor, whether the servers used share the same characteristics, etc
 
-For example, refer to [Practical FOFA Asset Discovery: COLDRIVER](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Discovery-%20COLDRIVER.md) on existing C2 asset discovery.
+For example, refer to [Practical FOFA Asset Discovery:COLDRIVER](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Discovery-%20COLDRIVER.md) on existing C2 asset discovery.
 
 ```
 C2:
@@ -531,7 +531,7 @@ banner="\x15\x03\x03\x00\x02\x022" && port="3000" && cert="Internet Widgits Pty 
 
 This method can be used when summarizing IOC features. If a fixed download path for downloading backdoors is found, FOFAX can be used as an auxiliary tool to make a judgment.
 
-For example:  in the article [Practical FOFA Asset Expansion：Ducktail](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion%EF%BC%9ADucktail.md), C2 asset discovery was performed. After forming the syntax based on features, it was found that the discovery results numbered in the tens of thousands. Due to the high false positive rate of this template, it is necessary to combine the paths/api/check obtained during early IOC analysis for further judgment. The path here comes from the sample's trace analysis. By tracking the initial IOC file hash and submitting it to the VT sandbox, the communication path was traced, revealing picture-based malware. By actively accessing the target, the sample was obtained and further analysis led to this address. In addition to online sandboxes, reverse engineering and active connection (trying on a virtual machine, careful to avoid command execution) can also be used to gather more information from the target.
+For example:  in the article [Practical FOFA Asset Expansion:Ducktail](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion%EF%BC%9ADucktail.md), C2 asset discovery was performed. After forming the syntax based on features, it was found that the discovery results numbered in the tens of thousands. Due to the high false positive rate of this template, it is necessary to combine the paths/api/check obtained during early IOC analysis for further judgment. The path here comes from the sample's trace analysis. By tracking the initial IOC file hash and submitting it to the VT sandbox, the communication path was traced, revealing picture-based malware. By actively accessing the target, the sample was obtained and further analysis led to this address. In addition to online sandboxes, reverse engineering and active connection (trying on a virtual machine, careful to avoid command execution) can also be used to gather more information from the target.
 
 ```
 IP
@@ -561,7 +561,7 @@ A batch of new live IOCs is obtained:
 
 ### Reverse Engineering
 
-When an IOC appears in the form of a phishing website, it may contain attachments such as APK files. By performing reverse engineering on the attachments and summarizing their characteristics, analyzing the attachments from the addresses in the FOFA query results can enhance the credibility of the asset discovery results. For example, in [Practical FOFA Asset Expansion: APT-C-23 Android Malware](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20APT-C-23%20Android%20Malware.md), reverse engineering the APK revealed that the app checks whether another app is installed during installation.
+When an IOC appears in the form of a phishing website, it may contain attachments such as APK files. By performing reverse engineering on the attachments and summarizing their characteristics, analyzing the attachments from the addresses in the FOFA query results can enhance the credibility of the asset discovery results. For example, in [Practical FOFA Asset Expansion:APT-C-23 Android Malware](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20APT-C-23%20Android%20Malware.md), reverse engineering the APK revealed that the app checks whether another app is installed during installation.
 
 > Jump to the place where GConfig.PT_PACKAGE_NAME is declared. The PT_PACKAGE_NAME field obtains the final package name through concatenation. After concatenation, the package name is shown as com.video.graphics. Therefore, this application will check whether another app is installed. If not, it will prompt the user to update, download com.video.graphics, and install it. Since the behavior patterns are consistent, there is no need for further analysis.
 >
@@ -614,10 +614,10 @@ https://github.com/projectdiscovery/nuclei-templates/tree/main/network/jarm/c2
 
 https://github.com/FofaInfo/GoFOFA
 
-[Practical FOFA Asset Expansion- Sidewinder APT](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Sidewinder%20APT.md)
+[Practical FOFA Asset Expansion:Sidewinder APT](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Sidewinder%20APT.md)
 
-[Practical FOFA Asset Discovery: COLDRIVER](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Discovery-%20COLDRIVER.md)
+[Practical FOFA Asset Discovery:COLDRIVER](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Discovery-%20COLDRIVER.md)
 
-[Practical FOFA Asset Expansion：Ducktail](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion%EF%BC%9ADucktail.md)
+[Practical FOFA Asset Expansion:Ducktail](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion%EF%BC%9ADucktail.md)
 
-[Practical FOFA Asset Expansion: APT-C-23 Android Malware](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20APT-C-23%20Android%20Malware.md)
+[Practical FOFA Asset Expansion:APT-C-23 Android Malware](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20APT-C-23%20Android%20Malware.md)
