@@ -14,7 +14,8 @@ This article will systematically elaborate on the entire process of asset Discov
 
 # Workflow Chart
 
-![73702317338](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/en/1737449841098.png)
+![73702317338](https://github.com/FofaInfo/Awesome-FOFA/blob/b4d7473e6f615761d4f65776072d241323a40290/Storage/Comprehensive_Guide/WPS%E5%9B%BE%E7%89%87(1).png)
+
 
 # Input Source
 
@@ -299,9 +300,9 @@ The JARM fingerprint using cobalt-strike-c2 in the FOFA search results is as fol
 
 Here, we can also perform a JARM reverse search on the search results for app="COBALTSTRIKE-Team Server".
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/6e677858-4a2d-4136-b630-d3b76fc84d82.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/b4d7473e6f615761d4f65776072d241323a40290/Storage/Comprehensive_Guide/图片1.png)
 
-![img](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/8c8a265a-686a-4c21-bd8f-f0545cc94b01.png)
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/b4d7473e6f615761d4f65776072d241323a40290/Storage/Comprehensive_Guide/图片2.png)
 
 By comparing the data volume from the two search results here, it is clear that **the JARM fingerprint equals the C2 fingerprint ≠ service is C2**. Combining this with our previous practice, we can conclude the following: JARM is not very reliable for identifying upper-layer applications like CobaltStrike; it only serves as an auxiliary tool. In actual practice, it is necessary to combine multiple pieces of information for judgment.
 
