@@ -29,13 +29,13 @@
 
 ### 情报网站
 
-- 360APT全景雷达： https://apt.360.net/aptlist
+- [360APT全景雷达](https://apt.360.net/aptlist)
 
-- 天际友盟威胁情报中心\_情报查询\_情报订阅： https://redqueen.tj-un.com/home/advanced 
+- [天际友盟威胁情报中心\_情报查询\_情报订阅](https://redqueen.tj-un.com/home/advanced) 
 
-- 奇安信威胁情报中心： https://ti.qianxin.com/apt/?type=map
+- [奇安信威胁情报中心](https://ti.qianxin.com/apt/?type=map)
 
--  安全星图平台： https://ti.dbappsecurity.com.cn/apt/list
+- [安全星图平台](https://ti.dbappsecurity.com.cn/apt/list)
 
 ### GitHub开源项目
 
@@ -63,10 +63,10 @@ https://github.com/blackorbird/APT_REPORT
 ###  Twitter上公开情报
 
 Twitter上有很多优秀的安全研究员或团队会输出一些有价值的情报，这些情报往往具备很强的时效性。由于篇幅有限，现仅列举历史拓线推文中曾引用推文的作者：
-- Yogesh Londhe：<https://x.com/suyog41>
-- Cyber Team：<https://x.com/Cyberteam008>
-- Group-IB Threat Intelligence：<https://x.com/GroupIB_TI>
-- Chris Duggan：<https://x.com/TLP_R3D>
+- [Yogesh Londhe](https://x.com/suyog41)
+- [Cyber Team](https://x.com/Cyberteam008)
+- [Group-IB Threat Intelligence](https://x.com/GroupIB_TI)
+- [Chris Duggan](https://x.com/TLP_R3D)
 
 ###  样本库
 
@@ -108,45 +108,25 @@ IOC若为已知组织，则直接获取该组织相关信息；若为未知组�
 
 ### 常见威胁情报社区
 
-**微步在线情报社区**
+- [微步在线情报社区](https://x.threatbook.com/)
 
-链接：[https://x.threatbook.com/](https://x.threatbook.com/)
+- [奇安信威胁情报中心](https://ti.qianxin.com/)
 
-**奇安信威胁情报中心**
+- [Virustotal](https://www.virustotal.com/)
 
-链接：[https://ti.qianxin.com/](https://ti.qianxin.com/)
+- [安全星图平台](https://ti.dbappsecurity.com.cn/)
 
-**Virustotal**
+- [天际友盟威胁情报中心-RedQueen](https://redqueen.tj-un.com/home/index)
 
-链接：[https://www.virustotal.com/](https://www.virustotal.com/)
+- [360安全大脑](https://ti.360.net/)
 
-**安全星图平台**
+- [安天威胁情报中心](https://www.antiycloud.com/)
 
-链接：[https://ti.dbappsecurity.com.cn/](https://ti.dbappsecurity.com.cn/)
+- [VenusEye-威胁情报中心](https://www.venuseye.com.cn/ip/)
 
-**天际友盟威胁情报中心-RedQueen**
+- [腾讯安全-威胁情报中心](https://tix.qq.com/)
 
-链接：[https://redqueen.tj-un.com/home/index](https://redqueen.tj-un.com/home/index)
-
-**360安全大脑**
-
-链接：[https://ti.360.net/](https://ti.360.net/)
-
-**安天威胁情报中心**
-
-链接：[https://www.antiycloud.com/](https://www.antiycloud.com/)
-
-**VenusEye-威胁情报中心**
-
-链接：[https://www.venuseye.com.cn/ip/](https://www.venuseye.com.cn/ip/)
-
-**腾讯安全-威胁情报中心**
-
-链接：[https://tix.qq.com/](https://tix.qq.com/)
-
-**绿盟威胁情报中心**
-
-链接：[https://ti.nsfocus.com/](https://ti.nsfocus.com/)
+- [绿盟威胁情报中心](https://ti.nsfocus.com/)
 
 ### Google
 
