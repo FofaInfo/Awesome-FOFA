@@ -22,7 +22,7 @@ This article will systematically elaborate on the entire process of asset Discov
 ## Scenario
 
 *    **Knowing the organization, Seeking the latest live IOC assets**（Our focus is finding certain APT group's IOC assets to perform asset discovery. For example, by targeting the OceanLous (also known as APT32, SeaLotus) group, we retrieve the most up-to-date active IOC assets associated with the group.）
-*    **Knowing the IOC, Seeking the latest live asset of the corresponding organization with Network Mapping**（If it is an IP of an unknown organization, skip directly to step two to confirm the organizational affiliation. If the organization can be identified, then directly confirm the relevant information of the organization; if it is an unknown organization or the organization has not been named, conduct the extension directly.）
+*    **Knowing the IOC, conduct line-expansion to find the latest surviving assets of the organization corresponding to this IOC**（If it is an IP of an unknown organization, skip directly to step two to confirm the organizational affiliation. If the organization can be identified, then directly confirm the relevant information of the organization; if it is an unknown organization or the organization has not been named, conduct the extension directly.）
 
 
 ![image.png](https://github.com/FofaInfo/Awesome-FOFA/blob/442962de5c33479b313d4971cf377f432ba60152/Storage/Comprehensive_Guide/1737450073141.png)
@@ -33,13 +33,10 @@ Below are several channels that regularly update the latest samples from the APT
 
 ### Intelligence Websites
 
-- 360 APT Panorama Radar https://apt.360.net/aptlist
--  Redqueen Threat Intelligence Center\_Intelligence Query\_Intelligence Subscription https://redqueen.tj-un.com/home/advanced 
-- Qianxin Threat Intelligence Center https://ti.qianxin.com/apt/?type=map
-
-
-
-- Starmap Dbappsecurity https://ti.dbappsecurity.com.cn/apt/list
+- [360 APT Panorama Radar](https://apt.360.net/aptlist)
+- [Redqueen Threat Intelligence Center\_Intelligence Query\_Intelligence Subscription](https://redqueen.tj-un.com/home/advanced)
+- [Qianxin Threat Intelligence Center](https://ti.qianxin.com/apt/?type=map)
+- [Starmap Dbappsecurity](https://ti.dbappsecurity.com.cn/apt/list)
 
 
 
@@ -70,10 +67,10 @@ Below we will share several WeChat official accounts that regularly update infor
 
 There are many excellent security researchers or teams on Twitter who will release some valuable intelligence, and this intelligence often has a strong timeliness. Due to limited space, only the authors of the tweets quoted in the historical extension tweets are listed here:
 
-- Yogesh Londhe：<https://x.com/suyog41>
-- Cyber Team：<https://x.com/Cyberteam008>
-- Group-IB Threat Intelligence：<https://x.com/GroupIB_TI>
-- Chris Duggan：<https://x.com/TLP_R3D>
+- [Yogesh Londhe](https://x.com/suyog41)
+- [Cyber Team](https://x.com/Cyberteam008)
+- [Group-IB Threat Intelligence](https://x.com/GroupIB_TI)
+- [Chris Duggan](https://x.com/TLP_R3D)
 
 ###  Sample Repository
 
@@ -119,45 +116,25 @@ Additionally, there are the following situations: The domain neger\[.\]site is o
 
 ### Common Threat Intelligence Communities
 
-**ThreatBook**
+- [ThreatBook](https://x.threatbook.com/)
 
-url: [https://x.threatbook.com/](https://x.threatbook.com/)
+- [Qianxin Threat Intelligence Center](https://ti.qianxin.com/)
 
-**Qianxin Threat Intelligence Center**
+- [Virustotal](https://www.virustotal.com/)
 
-url: [https://ti.qianxin.com/](https://ti.qianxin.com/)
+- [Starmap Dbappsecurity Platform](https://ti.dbappsecurity.com.cn/)
 
-**Virustotal**
+- [RedQueen](https://redqueen.tj-un.com/home/index)
 
-url: [https://www.virustotal.com/](https://www.virustotal.com/)
+- [360 Security Brain](https://ti.360.net/)
 
-**Starmap Dbappsecurity Platform**
+- [Antiy Threat Intelligence Center](https://www.antiycloud.com/)
 
-url: [https://ti.dbappsecurity.com.cn/](https://ti.dbappsecurity.com.cn/)
+- [VenusEye](https://www.venuseye.com.cn/ip/)
 
-**RedQueen**
+- [Tencent Security Threat Intelligence Center](https://tix.qq.com/)
 
-url: [https://redqueen.tj-un.com/home/index](https://redqueen.tj-un.com/home/index)
-
-**360 Security Brain。**
-
-url: [https://ti.360.net/](https://ti.360.net/)
-
-**Antiy Threat Intelligence Center**
-
-url: [https://www.antiycloud.com/](https://www.antiycloud.com/)
-
-**VenusEye**
-
-url: [https://www.venuseye.com.cn/ip/](https://www.venuseye.com.cn/ip/)
-
-**Tencent Security Threat Intelligence Center**
-
-url: [https://tix.qq.com/](https://tix.qq.com/)
-
-**NSFOCUS Threat Intelligence Center.**
-
-url: [https://ti.nsfocus.com/](https://ti.nsfocus.com/)
+- [NSFOCUS Threat Intelligence Center](https://ti.nsfocus.com/)
 
 ### Google
 
