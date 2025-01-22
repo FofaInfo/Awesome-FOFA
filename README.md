@@ -26,6 +26,8 @@
 
 ## Advanced Use Cases
 
+[A Comprehensive Guide to Threat Intelligence Discovery Using FOFA](https://github.com/FofaInfo/Awesome-FOFA/blob/4144088aed5815e7eee565d270c29892478992ed/Basic%20scenario/A%20Comprehensive%20Guide%20to%20Threat%20Intelligence%20Discovery%20Using%20FOFA.md)
+
 [Practical FOFA Asset Expansion- Unmasking the Trail of the 'Silver Fox' APT](https://github.com/FofaInfo/Awesome-FOFA/blob/5e54a179c7203cadc1e950e4e8f679caed5f9dee/Basic%20scenario/Practical%20FOFA%20Asset%20Expansion-%20Unmasking%20the%20Trail%20of%20the%20'Silver%20Fox'%20APT.md)
 
 [Conducting APT Bitter Tracking Operation Using FOFA](https://github.com/FofaInfo/Awesome-FOFA/blob/159a94ef0098db6fa5093f8cefff4d133f25ed8c/Basic%20scenario/Conducting%20APT%20Bitter%20Tracking%20Operation%20Using%20FOFA.md)
