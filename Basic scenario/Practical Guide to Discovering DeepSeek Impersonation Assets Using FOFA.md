@@ -120,7 +120,7 @@ Here, chatbot-deepseek.com is taken as an example. This website mimics the DeepS
 
 ![img](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/deepseek/1740110424422.png)
 
-chatbot-deepseek[.]com
+chatbot-deepseek.com
 
 ![img](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/deepseek/1740110430162.png)
 
