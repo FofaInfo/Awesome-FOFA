@@ -1,5 +1,5 @@
 # Practical Guide to Discovering DeepSeek Impersonation Assets Using FOFA
-
+![img](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/deepseek/fofa%E5%B0%81%E9%9D%A2%E8%8B%B1%E6%96%87%E7%89%88.png)
 ## Overview
 
 In January 2025, DeepSeek's latest open-source large model, R1, sparked global discussion among developers upon its release, and its influence continues to grow. According to SimilarWeb data, deepseek.com received over 277 million visits in January. As DeepSeek's popularity continues to rise, cybersecurity issues have once again entered the public spotlight, becoming a hot topic of discussion.
@@ -258,7 +258,7 @@ The results are as follows:
 
 ![img](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/deepseek/1740110544440.png)
 
-Analyzing the results, it is found that there are a large number of virtual currencies issued in the name of DeepSeek's official or taking advantage of DeepSeek's popularity. Due to the nature of virtual currencies, issuers often exaggerate the prospects of the currency and use false endorsements to conduct actual fraud. In addition, there are some scam websites in the name of Airdrop, such as deep-whitelist[.]com prompting to upload recovery phrase to connect the wallet, which is a typical airdrop scam.
+Analyzing the results, it is found that there are a large number of virtual currencies issued in the name of DeepSeek's official or taking advantage of DeepSeek's popularity. Due to the nature of virtual currencies, issuers often exaggerate the prospects of the currency and use false endorsements to conduct actual fraud. In addition, there are some scam websites in the name of Airdrop, such as deep-whitelist.com prompting to upload recovery phrase to connect the wallet, which is a typical airdrop scam.
 
 ![img](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/deepseek/1740110550033.png)
 
@@ -320,7 +320,7 @@ For certain types of impersonation websites with icons, we can extract the corre
 
 ![img](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/deepseek/1740110574540.png)
 
-When searching for the current target, a large number of icons similar to DeepSeek's can be seen. At this point, we can select similar icons for batch searching. In the search results, we can find that the previously identified deepseek-v3[.]live is among them.
+When searching for the current target, a large number of icons similar to DeepSeek's can be seen. At this point, we can select similar icons for batch searching. In the search results, we can find that the previously identified deepseek-v3.live is among them.
 
 ![img](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/deepseek/1740110580588.png)
 
