@@ -1,6 +1,6 @@
 # Predators in the Supply Chain: Targeting Small and Medium Suppliers
 
-![74b5afb7ff444dcb0206b31cdcda1a](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/b74b5afb7ff444dcb0206b31cdcda1a3.png)
+![74b5afb7ff444dcb0206b31cdcda1a](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/fofa封面英文版.png)
 
 
 
@@ -69,13 +69,13 @@ For example: Use FOFA's clustering function to analyze assets in the US region.
 
 Search for the quantity ranking of products titled xxxxxx in the US region (country="US", replace with your target syntax):
 
-![4991cdbc0614b2f894254ddda6c768](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/c4991cdbc0614b2f894254ddda6c7683.png)
+![4991cdbc0614b2f894254ddda6c768](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/c4991cdbc0614b2f894254ddda6c7683.png)
 
 Search for the quantity ranking of products titled xxxxxx in the US region, searching for known products.
 
-![ee014d659784d25a69dceeb30770ac](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/6ee014d659784d25a69dceeb30770ac5.png)
+![ee014d659784d25a69dceeb30770ac](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/6ee014d659784d25a69dceeb30770ac5.png)
 
-![image](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740542962652.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740542962652.png)
 
 Here, although the quantity of Cisco products in the US region is large, due to the high difficulty of vulnerability acquisition, we can consider their weight to be relatively low.
 
@@ -83,11 +83,11 @@ Here, although the quantity of Cisco products in the US region is large, due to 
 
 Use `fid` values (excluding invalid FIDs, e.g., 404, 403 status) for clustering analysis. `fid` is a unique identifier in FOFA used to distinguish systems, categorizing identical web pages to facilitate the identification of common system components within the target asset range. Through `fid`, we can discover some unknown, niche assets. These systems may have higher weight in analysis due to their uniqueness or low exposure.
 
-![690ccb0d45d41d8a5368522b4a809e](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/7690ccb0d45d41d8a5368522b4a809e7.png)
+![690ccb0d45d41d8a5368522b4a809e](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/7690ccb0d45d41d8a5368522b4a809e7.png)
 
 By calculating the risk values of supply chain-related component products across multiple dimensions, a high-score list of noteworthy items is recommended as follows:
 
-![e147348d6c3](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740543023256.png)
+![e147348d6c3](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740543023256.png)
 
 # Practical Case: The Penetration Chain from Supply Chain to Core Targets
 
@@ -105,15 +105,15 @@ Locked onto three system development service providers via the xxxx tender platf
 
 Bulk scanning revealed a PHP-CGI service with an unpatched CVE-2019-11043 vulnerability on the target vendor's assets, uploading a WebShell to gain control. This Nday is a high-risk CVE from 2019.
 
-![image](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740543030549.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740543030549.png)
 
 ### Lateral Penetration
 
 Discovered two antivirus software on the machine, built a tunnel via open-source proxy, opening an entry point to the internal network. Internal network scanning revealed a JBoss deserialization vulnerability (CVE-2017-12149), bypassing Avast antivirus with a customized Go language Trojan.
 
-![image](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740543036499.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740543036499.png)
 
-![image](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740543041404.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740543041404.png)
 
 Located several machines storing development system source code. By analyzing the source code, identified the corresponding systems. Then, using FOFA's special search function, employed specific syntax (e.g., based on special fields in the source code, JS files, or image hash values) to search, further identifying and locating related assets.
 
@@ -179,7 +179,7 @@ os="xxxxxxxxxx"
 
 Many systems use the same components, such as being installed on Windows or Linux, or using the same Apache, PHP versions. This is also a good search approach. As shown:
 
-![换](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/替换3.png)
+![换](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/替换3.png)
 
 In summary, combining syntax yields the following FOFA statement:
 
@@ -189,7 +189,7 @@ In summary, combining syntax yields the following FOFA statement:
 
 These syntaxes are simple and easy to implement after obtaining the source code.
 
-![换](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/替换1.png)
+![换](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/替换1.png)
 
 As shown, successfully searched for all assets in this region, although they are all IPs.
 
@@ -197,17 +197,17 @@ As shown, successfully searched for all assets in this region, although they are
 
 In a system compromised via an Nday vulnerability, the running source code of a B/S system was stored. We directly audited the source code and discovered an SQL injection vulnerability (SELECT * FROM user WHERE account='$_POST[id]') (entry-level vulnerability discovery, extremely low cost).
 
-![换](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/替换2.png)
+![换](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/替换2.png)
 
 Then, using SQLMAP to run the injection point, discovered union, error, and stacked injections.
 
-![image](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740543071245.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740543071245.png)
 
 Then, probing permissions revealed sa privileges, xpcmdshell execution succeeded, and it was an internet-facing machine.
 
 Next, writing a shell, first probing the path, flipping through the interface, found a PHP error directly exposing the absolute path.
 
-![image](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740543110411.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740543110411.png)
 
 ```plaintext
 exec+master..xp_cmdshell+echo+ webshell............. >C:\xampp\xxxxxxxx\xxxx.php
@@ -215,17 +215,17 @@ exec+master..xp_cmdshell+echo+ webshell............. >C:\xampp\xxxxxxxx\xxxx.php
 
 Directly using the echo command to write a shell, successfully obtaining system privileges.
 
-![image](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740543117320.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740543117320.png)
 
 Using sqlmap to export client email suffixes (*@xxxxx), reverse-locating the target unit's public IP.
 
-![image](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740543122829.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740543122829.png)
 
 ### Expanding Gains
 
 Through the food system fingerprints produced by the supply chain vendor, quickly obtained global assets, compromising nearly a hundred organizations' shells, including multiple target organizations. All assets can be shelled.
 
-![image](The Hidden Predator in the Supply Chain Jungle Targeted Breakthrough Strategies for Small and Medium-Sized Suppliers.assets/1740543128334.png)
+![image](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Storage/supply_chain/1740543128334.png)
 
 ## Key Conclusions
 
@@ -235,4 +235,4 @@ Through the food system fingerprints produced by the supply chain vendor, quickl
 
 # Conclusion: The Essence of Security Game Reconstruction
 
-The success of supply chain attacks does not rely on technical complexity but on the systematic exploitation of ecosystem vulnerabilities. **While defenders focus on "high walls and deep moats," attackers have already reconstructed the cost curve of offense and defense through迂回 paths.** Future security systems need to break away from single-point defense thinking and incorporate the supply chain into a global risk assessment framework—because the most dangerous threats often come from your most trusted partners.
+The success of supply chain attacks does not rely on technical complexity but on the systematic exploitation of ecosystem vulnerabilities. **While defenders focus on "high walls and deep moats," attackers have already reconstructed the cost curve of offense and defense through paths.** Future security systems need to break away from single-point defense thinking and incorporate the supply chain into a global risk assessment framework—because the most dangerous threats often come from your most trusted partners.
