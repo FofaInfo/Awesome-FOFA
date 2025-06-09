@@ -72,6 +72,8 @@
 [How did LLM become accomplices to crime?](https://github.com/FofaInfo/Awesome-FOFA/blob/615dd1a7201aa3b2e58b391d7681b598ad976930/Basic%20scenario/How%20did%20LLM%20become%20accomplices%20to%20crime%3F.md)
 
 ### Great analysis report
+[Roundcube ≤ 1.6.10 Post-Auth RCE via PHP Object Deserialization [CVE-2025-49113]](https://fearsoff.org/research/roundcube)
+
 [Mass Campaign of Murdoc Botnet Mirai: A New Variant of Corona Mirai](https://blog.qualys.com/vulnerabilities-threat-research/2025/01/21/mass-campaign-of-murdoc-botnet-mirai-a-new-variant-of-corona-mirai)
 
 [Detecting Hidden Illegal Online Gambling on .go.id Domains Using Web Scraping Algorithms
