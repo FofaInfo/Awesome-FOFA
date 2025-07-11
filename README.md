@@ -7,6 +7,10 @@
 
 [How to Get Free F-point from FOFA? ](https://github.com/FofaInfo/Awesome-FOFA/blob/main/Get%20Started%20with%20FOFA/How%20to%20Get%20Free%20F-point%20from%20FOFA%3F.md)
 
+## FOFA and AI
+
+[Next-Generation Attack Surface Inventory: Free Trial Available!](https://github.com/FofaInfo/Awesome-FOFA/blob/2718f88e56d0dc678b07ece1793707a9c3bb9542/FOFA%2BAI/Next-Generation%20Attack%20Surface%20Inventory%3A%20Free%20Trial%20Available!.md)
+
 ## Basic scenario
 
 [How to use FOFA to discover free LLM resources?](https://github.com/FofaInfo/Awesome-FOFA/blob/76d6ff924c4c498a6752fad32c46d71441e40994/Basic%20scenario/How%20to%20use%20FOFA%20to%20discover%20free%20LLM%20resources%3F.md)
